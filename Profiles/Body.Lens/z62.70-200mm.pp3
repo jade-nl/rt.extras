@@ -1,0 +1,14 @@
+[Version]
+AppVersion=5.8-3050-g6b8b899bf
+Version=349
+
+[LensProfile]
+LcMode=lfmanual
+LCPFile=
+UseDistortion=true
+UseVignette=true
+UseCA=false
+LFCameraMake=Nikon Corporation
+LFCameraModel=Nikon Z6_2
+LFLens=Nikon Nikon AF-S Nikkor 70-200mm f/2.8G ED VR II 162
+
