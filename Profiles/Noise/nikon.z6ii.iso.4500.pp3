@@ -1,0 +1,44 @@
+[Version]
+AppVersion=5.8-3050-g6b8b899bf
+Version=349
+
+[Sharpening]
+Enabled=false
+
+[Impulse Denoising]
+Enabled=true
+Threshold=40
+
+[Directional Pyramid Denoising]
+Enabled=true
+Enhance=false
+Median=false
+Luma=0
+Ldetail=5
+Chroma=11.01
+Method=Lab
+LMethod=CUR
+CMethod=MAN
+C2Method=AUTO
+Gamma=2
+Passes=2
+LCurve=1;0.0925;0.2625;0.35;0.28;0.75;0.07625;0.23;0.35;
+CCCurve=1;0.10;0.525;0.35;0.35;0.5125;0.0975;0.35;0.35;
+
+[PostDemosaicSharpening]
+Enabled=true
+Contrast=65
+AutoContrast=false
+AutoRadius=false
+DeconvRadius=0.65000000000000002
+DeconvRadiusOffset=0
+DeconvIterCheck=true
+DeconvIterations=20
+
+[RAW Bayer]
+Method=lmmse
+CcSteps=0
+LMMSEIterations=2
+DualDemosaicAutoContrast=true
+DualDemosaicContrast=0
+

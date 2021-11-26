@@ -1,0 +1,24 @@
+[Version]
+AppVersion=5.8-3050-g6b8b899bf
+Version=349
+
+[Impulse Denoising]
+Enabled=true
+Threshold=30
+
+[Directional Pyramid Denoising]
+Enabled=true
+Enhance=false
+Median=false
+Luma=0
+Ldetail=0
+Chroma=10
+Method=Lab
+LMethod=CUR
+CMethod=MAN
+C2Method=AUTO
+Gamma=1.7
+Passes=1
+LCurve=1;0.065;0.175;0.35;0.35;0.60;0.055;0.35;0.35;
+CCCurve=1;0.06;0.51;0.35;0.35;0.40;0.0505;0.35;0.35;
+
