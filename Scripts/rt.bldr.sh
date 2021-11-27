@@ -226,7 +226,7 @@ else
   done
 fi
 
-ininggcurVrsn=$( ${localTrgtDir}/rawtherapee -v | awk '{ print $3 }' )
+curVrsn=$( ${localTrgtDir}/rawtherapee -v | awk '{ print $3 }' )
 
 # -------------------------------------------------------- #
 # act on actions
