@@ -10,7 +10,7 @@ Depending on the ISO level the following modules can be effected by these profil
 - Noise Reduction
 - Sharpening
 
-These are meant as a good starting point. Finutuning needs to be done manually.
+These are meant as a good starting point. Fine-tuning needs to be done manually.
 
 The *Denoise and Refine* and *Edge sharpness* tools from the *Wavelets levels* module are not included in these profiles. Too many factors come into play to set a sane baseline. 
 
