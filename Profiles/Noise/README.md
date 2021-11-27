@@ -1,6 +1,6 @@
 # Noise profiles
 
-A set of noise profiles created for the Nikon Z6II. These are meant as a good starting point.
+A set of noise profiles created for the Nikon Z6II.
 
 Depending on the ISO level the following modules can be effected by these profiles:
 
@@ -10,6 +10,8 @@ Depending on the ISO level the following modules can be effected by these profil
 - Noise Reduction
 - Sharpening
 
-The *Denoise and Refine* and *Edge sharpness* tools from the *Wavelets levels* module are not included in these profiles. Too many factors come into play to set a sane baseline.
+These are meant as a good starting point. Finutuning needs to be done manually.
+
+The *Denoise and Refine* and *Edge sharpness* tools from the *Wavelets levels* module are not included in these profiles. Too many factors come into play to set a sane baseline. 
 
 Not sure if these are useful for other Nikon Z series cameras. Let me know if they are(n't).
