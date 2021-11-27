@@ -46,7 +46,6 @@ clear
 # also merge branches of interest
 function _gitRtClone ()
 {
-  echo " --- ----- ---"
   echo " --- cloning repository"
   # --------------------------------------------------- #
   # force clone
@@ -78,7 +77,7 @@ function _gitRtClone ()
   git merge --no-edit poor_man_dehaze
   
   # -------------------------------------------------------- #
-  # Multiple External Editors #6299 - does not build
+  # Multiple External Editors #6299 (does not build?)
   #  echo " --- #6299 ---"
   #  git checkout multi-external-editor
   #  git pull origin multi-external-editor
@@ -86,7 +85,7 @@ function _gitRtClone ()
   #  git merge --no-edit multi-external-editor
   
   # -------------------------------------------------------- #
-  #  LA - new tool - Color appearance (Cam16 & JzCzHz) #6377 
+  # LA - new tool - Color appearance (Cam16 & JzCzHz) #6377 
   echo " --- #6377 ---"
   git checkout lagamciemask2
   git pull origin lagamciemask2
@@ -95,17 +94,13 @@ function _gitRtClone ()
   git merge --no-edit lagamciemask2
   
   # -------------------------------------------------------- #
-  #   Favorites preferences #6383 
+  # Favorites preferences #6383 
   echo " --- #6383 ---"
   git checkout favorites-gui
   git pull origin favorites-gui
   git checkout dev
   git merge -m "Favorites preferences" favorites-gui
   git merge --no-edit favorites-gui
-  
-  # -------------------------------------------------------- #
-  #  Experimental/Development 
-  # -------------------------------------------------------- #
   
   # -------------------------------------------------------- #
   # Merge external branche - not from github.com/Beep6581/RawTherapee
@@ -126,7 +121,6 @@ function _gitRtPull ()
 {
   # -------------------------------------------------------- #
   # pull
-  echo " --- ----- ---"
   echo " --- pulling repository"
   cd "${gitRtDir}" || exit 255
   git pull --no-edit || exit 254
@@ -144,13 +138,11 @@ function _gitRtPull ()
 # configure/build/compile RT
 function _gitRtBuild ()
 {
-  echo " --- ----- ---"
   echo " --- building"
   # -------------------------------------------------------- #
   # set language to use
   if [ "${optAltLang}" -eq "1" ]
   then
-  echo " --- ----- ---"
   echo " --- using clang"
     export CC=clang
     export CXX=clang++
@@ -158,8 +150,7 @@ function _gitRtBuild ()
   
   # -------------------------------------------------------- #
   # set up a clean build
-  echo " --- ----- ---"
-  echo " --- clean build"
+  echo " --- cleaning build"
   cd "${gitRtDir}" || exit 253
   rm -rf build || exit 252
   mkdir build || exit 251
@@ -167,7 +158,6 @@ function _gitRtBuild ()
 
   # -------------------------------------------------------- #
   # configure
-  echo " --- ----- ---"
   echo " --- cmake"
   cmake \
       -DBUNDLE_BASE_INSTALL_DIR="${localTrgtDir}" \
@@ -192,7 +182,6 @@ function _gitRtBuild ()
 
   # -------------------------------------------------------- #
   # compile
-  echo " --- ----- ---"
   echo " --- compiling"
   [[ $(nproc) -ge 4 ]] && CORES="$(($(nproc)-2))" || CORES=$(nproc)
   make --jobs=$CORES || exit 248
@@ -205,7 +194,6 @@ function _gitRtInstall ()
 {
   # -------------------------------------------------------- #
   # install
-  echo " --- ----- ---"
   echo " --- installing"
   rm -rf "${localTrgtDir}" || exit 247
   cd "${gitRtDir}/build"
@@ -218,6 +206,9 @@ function _gitRtInstall ()
 if [ "$#" -eq "0" ]
 then
   # no options given
+  # set defaults
+  optAltLang="0"
+  optClone="0"
   optPull="1"
   optBuild="1"
   optInstall="1"
@@ -235,7 +226,7 @@ else
   done
 fi
 
-curVrsn=$( ${localTrgtDir}/rawtherapee -v | awk '{ print $3 }' )
+ininggcurVrsn=$( ${localTrgtDir}/rawtherapee -v | awk '{ print $3 }' )
 
 # -------------------------------------------------------- #
 # act on actions
