@@ -57,62 +57,28 @@ function _gitRtClone ()
   git checkout dev || exit 125
   
   # -------------------------------------------------------- #
-  # Merge some goodies - from github.com/Beep6581/RawTherapee
+  # Merge some goodies - A Template
   # -------------------------------------------------------- #
-  # Improvements to histogram #5904
-  echo " --- #5904 ---"
-  git checkout histogram-improved
-  git pull origin histogram-improved
-  git checkout dev
-  git merge -m "Improvements to histogram #5904" histogram-improved
-  git merge --no-edit histogram-improved
-  
-  # -------------------------------------------------------- #
-  # Poor men's dehaze #5769
-  echo " --- #5769 ---"
-  git checkout poor_man_dehaze
-  git pull origin poor_man_dehaze
-  git checkout dev
-  git merge -m "Poor man dehaze #5769" poor_man_dehaze
-  git merge --no-edit poor_man_dehaze
-  
-  # -------------------------------------------------------- #
-  # Multiple External Editors #6299 (does not build?)
-  #  echo " --- #6299 ---"
-  #  git checkout multi-external-editor
-  #  git pull origin multi-external-editor
-  #  git checkout dev
-  #  git merge --no-edit multi-external-editor
-  
-  # -------------------------------------------------------- #
-  # LA - new tool - Color appearance (Cam16 & JzCzHz) #6377 
-  echo " --- #6377 ---"
-  git checkout lagamciemask2
-  git pull origin lagamciemask2
-  git checkout dev
-  git merge -m "Colour Appearance" lagamciemask2
-  git merge --no-edit lagamciemask2
-  
-  # -------------------------------------------------------- #
-  # Favorites preferences #6383 
-  echo " --- #6383 ---"
-  git checkout favorites-gui
-  git pull origin favorites-gui
-  git checkout dev
-  git merge -m "Favorites preferences" favorites-gui
-  git merge --no-edit favorites-gui
+  # Name/Number PR
+#  echo " --- #NUMBER ---"
+#  git checkout BRANCH_NAME
+#  git pull origin BRANCH_NAME
+#  git checkout dev
+#  git merge -m "Description and number" BRANCH_NAME
+#  git merge --no-edit BRANCH_NAME
   
   # -------------------------------------------------------- #
   # Merge external branche - not from github.com/Beep6581/RawTherapee
   # -------------------------------------------------------- #
-  #  Add default spot size control #6371 (EXTERNAL)
-  #  git remote add rtfuture "https://github.com/jonathanBieler/RawTherapee"
-  #  git remote update
-  #  git branch spot_size_control
-  #  git checkout spot_size_control
-  #  git merge -m "merging" --allow-unrelated-histories "rtfuture/spot_size_control"
-  #  git checkout dev
-  #  git merge -m "future" spot_size_control
+  #  Name/Number PR
+#  git remote add rtfuture "URL_to_Remote_Repo"
+#  git remote update
+#  git branch BRANCH_NAME
+#  git checkout BRANCH_NAME
+#  git merge -m "merging" --allow-unrelated-histories "rtfuture/BRANCH_NAME"
+#  git checkout dev
+#  git merge -m "future" BRANCH_NAME
+ 
 }
 
 # -------------------------------------------------------------------------- #
