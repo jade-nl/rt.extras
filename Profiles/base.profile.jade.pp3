@@ -403,7 +403,7 @@ DeconvDamping=0
 DeconvIterations=100
 
 [Color Management]
-InputProfile=(camera)
+InputProfile=(cameraICC)
 ToneCurve=false
 ApplyLookTable=false
 ApplyBaselineExposureOffset=true
