@@ -56,4 +56,4 @@ Some other preferences are dailed in as a starting point. These modules are not 
 
 This profile is the same as the *base.profile.jade* profile except for:
  - No resizing is done, image is kept at full, original size.
- - Output Colout profile is set to *ProPhotRGB* (This profile is not provided by RawTherapee!)
+ - Output Colout profile is set to *ProPhotoRGB* (This profile is not provided by RawTherapee!)
