@@ -28,10 +28,13 @@ optBuild="0"
 optInstall="0"
 optAltLang="0"
 
-gitBsDir="/home/jade/.local/git"
-gitRtDir="${gitBsDir}/RawTherapee"
+# -------------------------------------------------------------------------- #
+# !! change these to the appropriate locations !!
+gitBsDir="/home/jade/.local/git"    # location of git base directory
+localTrgtDir="$HOME/.local/rt.dvlp" # install location for local RawTherapee
+# -------------------------------------------------------------------------- #
 
-localTrgtDir="$HOME/.local/rt.dvlp"
+gitRtDir="${gitBsDir}/RawTherapee"
 
 export CC=gcc
 export CXX=g++
@@ -124,6 +127,7 @@ function _gitRtBuild ()
 
   # -------------------------------------------------------- #
   # configure
+  # Reference: https://rawpedia.rawtherapee.com/Linux
   echo " --- cmake"
   cmake \
       -DBUNDLE_BASE_INSTALL_DIR="${localTrgtDir}" \
@@ -150,7 +154,7 @@ function _gitRtBuild ()
   # compile
   echo " --- compiling"
   [[ $(nproc) -ge 4 ]] && CORES="$(($(nproc)-2))" || CORES=$(nproc)
-  make --jobs=$CORES || exit 248
+  make --jobs="$CORES" || exit 248
 
 }
 
@@ -162,8 +166,8 @@ function _gitRtInstall ()
   # install
   echo " --- installing"
   rm -rf "${localTrgtDir}" || exit 247
-  cd "${gitRtDir}/build"
-  make install || exit 246
+  cd "${gitRtDir}/build" || exit 246
+  make install || exit 245
 }
 
 # -------------------------------------------------------------------------- #
@@ -173,11 +177,11 @@ if [ "$#" -eq "0" ]
 then
   # no options given
   # set defaults
-  optAltLang="0"
-  optClone="0"
-  optPull="1"
-  optBuild="1"
-  optInstall="1"
+  optAltLang="0"        # do not use clang
+  optClone="0"          # do not clone
+  optPull="1"           # do     pull
+  optBuild="1"          # do     build
+  optInstall="1"        # do     install
 else
   # parse options
   while getopts ":abcip" OPTION
@@ -188,11 +192,13 @@ else
       c) optClone="1" ; optPull="0" ;;
       b) optBuild="1" ;;
       i) optInstall="1" ;;
+      *) echo -e "\\nOptions that can be used are: a, b, c, i and p\\n" ; 
+         exit 244 ;;
     esac
   done
 fi
 
-curVrsn=$( ${localTrgtDir}/rawtherapee -v | awk '{ print $3 }' )
+curVrsn=$( "${localTrgtDir}"/rawtherapee -v | awk '{ print $3 }' )
 
 # -------------------------------------------------------- #
 # act on actions
