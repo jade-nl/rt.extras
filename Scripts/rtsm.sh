@@ -15,7 +15,7 @@
 # 3) Select which spot to move.
 # 4) Select new location of this spot.
 #    -repeat steps 3 and 4 if wanted/needed-
-# 5) press **x** when satisfied or **q** to abandon/quit.
+# 5) press *x* when satisfied or *q* to abandon/quit.
 #
 # The first number (under *CL*) reflects the spot location, this is followed
 # by the spot name and (under *OL*) the original spot location (in case the
@@ -24,9 +24,9 @@
 # The script will not point out wrong choices, it will keep asking for
 # input until it is satisfied.
 #
-# If **x** was chosen then the script will create a new file that can be
+# If *x* was chosen then the script will create a new file that can be
 # imported into RawTherapee.
-# If **q* was chosen the script will stop running without doing anything.
+# If *q* was chosen the script will stop running without doing anything.
 #
 # The saved profile will not be changed in any way, a new file will be
 #  created that holds the new layout.
