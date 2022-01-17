@@ -29,7 +29,7 @@
 # If *q* was chosen the script will stop running without doing anything.
 #
 # The saved profile will not be changed in any way, a new file will be
-#  created that holds the new layout.
+# created that holds the new layout.
 #
 # There's no need to quit RawTherapee while doing this, so the history will
 # not be lost and there's the possibility to undo by stepping back in the
@@ -66,7 +66,7 @@ lglInSrc='^[1-9xq][0-9]*$'
 lglInTrgt='^[1-9][0-9]*$'
 cntr=""
 finalize="f"
-sptNUMB=1
+sptNumb=1
 tmpOne=""
 tmpTwo=""
 lngDev="# -------------------------------------------------------------------------- #"
@@ -123,7 +123,7 @@ do
       echo "# "
       echo "${lngDev}"
       rm -rf "${tmpDir}"
-      exit
+      exit 0
     fi
     if ! [[ "${srcSpot}" =~  ${lglInSrc} ]]    || \
          [[ "${srcSpot}" -lt 1 ]]              || \
@@ -221,10 +221,10 @@ BEGIN { FS = "=" ; sptCntr = 0 }
 while read -r SPOT
 do
   sptNAME="${SPOT#*=}"
-  formOut=$(printf "%-65s %02d" "$sptNAME" "$sptNUMB")
-  spotsArray[${sptNUMB}]="${formOut}"
-  manipArray[${sptNUMB}]="${sptNUMB}"
-  (( sptNUMB++ ))
+  formOut=$(printf "%-65s %02d" "$sptNAME" "$sptNumb")
+  spotsArray[${sptNumb}]="${formOut}"
+  manipArray[${sptNumb}]="${sptNumb}"
+  (( sptNumb++ ))
 done < <( sed -n '/Name_/p' "${inFile}" )
 
 _doMoves
