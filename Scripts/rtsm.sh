@@ -24,16 +24,18 @@
 # The script will not point out wrong choices, it will keep asking for
 # input until it is satisfied.
 #
-# If *x* was chosen then the script will create a new file that can be
-# imported into RawTherapee.
+# If *x* was chosen then the script will create a new file, with only the
+# ireordered Local Adjustment section present. This file can be imported
+# into RawTherapee. Do make sure that the *Preserve* mode is set.
+# 
 # If *q* was chosen the script will stop running without doing anything.
-#
-# The saved profile will not be changed in any way, a new file will be
-# created that holds the new layout.
 #
 # There's no need to quit RawTherapee while doing this, so the history will
 # not be lost and there's the possibility to undo by stepping back in the
 # history panel.
+#
+# The exported file and the newly created file are not removed by the script,
+# this needs to be done by the user.
 # -------------------------------------------------------------------------- #
 #set -xv
 set -u
