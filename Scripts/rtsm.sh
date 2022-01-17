@@ -25,7 +25,7 @@
 # input until it is satisfied.
 #
 # If *x* was chosen then the script will create a new file, with only the
-# ireordered Local Adjustment section present. This file can be imported
+# reordered Local Adjustment section present. This file can be imported
 # into RawTherapee. Do make sure that the *Preserve* mode is set.
 # 
 # If *q* was chosen the script will stop running without doing anything.
