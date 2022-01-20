@@ -16,7 +16,9 @@
 # 4) Select new location of this spot.
 #    -repeat steps 3 and 4 if wanted/needed-
 # 5) press *x* when satisfied or *q* to abandon/quit.
-#
+# 6) Return to RawTherapee and delete the spots that are present
+# 7) Load the file created by this script.
+# -------------------------------------------------------------------------- #
 # The first number (under *CL*) reflects the spot location, this is followed
 # by the spot name and (under *OL*) the original spot location (in case the
 # spot names are still the default *New Spot*).
@@ -26,7 +28,8 @@
 #
 # If *x* was chosen then the script will create a new file, with only the
 # reordered Local Adjustment section present. This file can be imported
-# into RawTherapee. Do make sure that the *Preserve* mode is set.
+# into RawTherapee (after removing the spots already present).
+# Do make sure that the *Preserve* mode is set.
 # 
 # If *q* was chosen the script will stop running without doing anything.
 #
