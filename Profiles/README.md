@@ -58,7 +58,7 @@ This profile is the same as the *base.profile.jade* profile except for:
  - No resizing is done, image is kept at full, original size.
  - Output Colour profile is set to *ProPhotoRGB* (This profile is not provided by RawTherapee!)
 
-If you do not have access to the ProPhotoRGB profile consider using one of Elle Stone's well-behaved ICC profiles (Rec2020 might be a good alternative):
+If you do not have access to the *ProPhotoRGB* profile consider using one of Elle Stone's well-behaved ICC profiles. *Rec2020* might be a good alternative.
 - [Nine Degrees Below](https://ninedegreesbelow.com/photography/lcms-make-icc-profiles.html)
 - [elles_icc_profiles on GitHub](https://github.com/ellelstone/elles_icc_profiles)
 
