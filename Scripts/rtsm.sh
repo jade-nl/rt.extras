@@ -39,7 +39,7 @@
 # this needs to be done by the user.
 #
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# !!! There is a an issue that does not load a partial Local Adjustment  !!!
+# !!! There is an issue that does not load a partial Local Adjustment    !!!
 # !!! profile as would be expected. An extra step is needed until this   !!!
 # !!! is fixed: Remove the spots that are present before loading the new !!!
 # !!! profile:                                                           !!!
