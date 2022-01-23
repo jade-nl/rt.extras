@@ -9,7 +9,7 @@
 
 - colour.toning.baseline.pp3
 
-  Sets *L\\*a\\*b blending* method with predefined and in sync guides for both the *Colour* and *Opacity* equalizer.
+  Sets *L\*a\\*b blending* method with predefined and in sync guides for both the *Colour* and *Opacity* equalizer.
 
 - hsv.more.verticals.pp3
 
