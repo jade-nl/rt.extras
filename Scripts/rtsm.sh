@@ -16,7 +16,7 @@
 # 4) Select new location of this spot.
 #    -repeat steps 3 and 4 if wanted/needed-
 # 5) press *x* when satisfied or *q* to abandon/quit.
-# 6) Load created profile in RawTherapee
+# 6) Load created profile in RawTherapee.
 # -------------------------------------------------------------------------- #
 # The first number (under *CL*) reflects the spot location, this is followed
 # by the spot name and (under *OL*) the original spot location (in case the
@@ -38,12 +38,17 @@
 # The exported file and the newly created file are not removed by the script,
 # this needs to be done by the user.
 #
-# -------------------------------------------------------------------------- #
-# !!! There is a bug in RawTherapee that does not load a partial Local   !!!
-# !!! Adjustment profile correctly. An extra step is needed until this   !!!
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !!! There is a an issue that does not load a partial Local Adjustment  !!!
+# !!! profile as would be expected. An extra step is needed until this   !!!
 # !!! is fixed: Remove the spots that are present before loading the new !!!
-# !!! profile.                                                           !!!
-# !!! Bug report number: #6411                                           !!!
+# !!! profile:                                                           !!!
+# !!! 6) Delete all existing spots,                                      !!!
+# !!! 7) Load created profile in RawTherapee.                            !!!
+# !!!                                                                    !!!
+# !!! Bug report number: #6411 (current behaviour is "as-intended" and   !!!
+# !!! might be fixed/changed once 5.9 has rolled out)                    !!!
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # -------------------------------------------------------------------------- #
 #set -xv
 set -u
