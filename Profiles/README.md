@@ -1,5 +1,7 @@
 ## Profiles
 
+Most of these profiles are starting points and should not be used *as-is*.
+
 **base.profile.jade**
 
 A general use profile with the following settings on top of a neutral profile:
