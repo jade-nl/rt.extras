@@ -3,7 +3,8 @@
 
   Remove all spots present.
 
-- white.border.pp3
+- border-black.pp3
+- border-white.pp3
 
-  Create a white border around the image.
+  Create a black/white border around the image.
 
