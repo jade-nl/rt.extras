@@ -43,7 +43,8 @@
 # !!! profile as would be expected. An extra step is needed until this   !!!
 # !!! is fixed: Remove the spots that are present before loading the new !!!
 # !!! profile:                                                           !!!
-# !!! 6) Delete all existing spots,                                      !!!
+# !!!                                                                    !!!
+# !!! 6) In RawTherapee delete all existing spots,                       !!!
 # !!! 7) Load created profile in RawTherapee.                            !!!
 # !!!                                                                    !!!
 # !!! Bug report number: #6411 (current behaviour is "as-intended" and   !!!
