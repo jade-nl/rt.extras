@@ -4,7 +4,10 @@
   Remove all spots present.
 
 - border-black.pp3
+- border-grey.pp3
 - border-white.pp3
 
-  Create a black/white border around the image.
+- border-coloured.pp3
+
+  Create a black, coloured, grey or white border around the image.
 
