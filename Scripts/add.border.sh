@@ -116,9 +116,9 @@ IFrame="-frame x${InnerPercent}%+0+0"
 
 # -------------------------------------------------------- #
 # Create bordered image:
-/usr/bin/convert                                            \
+convert                                                     \
   "$InFile"                                                 \
-  -mattecolor "${InnerBorder}" ${IFrame}  \
+  -mattecolor "${InnerBorder}" ${IFrame}                    \
   -mattecolor "${OuterBorder}" -frame x${OuterPercent}%+0+0 \
   -resize "${MaxWidth}x${MaxHeight}>"                       \
   "${OutName}.${OutExt}"
