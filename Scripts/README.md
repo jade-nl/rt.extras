@@ -13,3 +13,16 @@ Make sure to change **gitBsDir** and **localTrgtDir** to reflect your situation.
 A script that makes it possible to move the position of the created Local Adjustment spots.
 
 At the moment it is not possible to rearrange the spot order once they are created. There's an outstanding FR ([#6359](https://github.com/Beep6581/RawTherapee/issues/6359)) to get this implemented. This script fills that need for the time being.
+
+### add.border.sh
+
+This is a general, lightweight and flexible script that can add a border to an exported image (jpg, png or tiff). It is fully independent of RawTherapee, which can not do this natively yet. A possible lightweight alternative to GIMP, Krita, Photoshop, IrfanView etc.
+
+The following can be, independently, set: 
+- Inner border colour,
+- Outer border colour,
+- Inner border width,
+- Outer border width,
+- Maximum size (longest side and scaled down only).
+
+The Linux script is written with *convert*, a ImageMagick tool, at its base.
