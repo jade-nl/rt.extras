@@ -5,8 +5,6 @@
 
 - border-black.pp3
 - border-coloured.pp3
-- border-grey.pp3
-- border-white.pp3
 
-  Create a black, coloured, grey or white border around the image.
+  Create a black or coloured border (just a novelty).
 
