@@ -9,23 +9,25 @@
 #  -O percentage  - Set width for outer border        - 6%
 #  -i colour      - Set colour for inner border       - #000000 (Black)
 #  -I percentage  - Set width for inner border        - 0.2%
-#                 - use -I 0 (zero) to fully disable inner border"
+#                 - Use -I 0 (zero) to fully disable inner border
 #  -s size        - Set maximum size (longest side)   - 2560
-#
+# -------------------------------------------------------------------------- #
 # colour can be set as a:
-# - colour known name : Ivory
-# - HEX value         : #fffff0
-# - RGB value         : rgb(255,255,240)  !! No spaces
-# - HSL value         : hsl(60,100%,97%)  !! No spaces
+#
+# - Colour name : Ivory
+# - HEX value   : #fffff0
+# - RGB value   : rgb(255,255,240)  !! No spaces
+# - HSL value   : hsl(60,100%,97%)  !! No spaces
 
 # List of colour names : https://www.w3schools.com/colors/colors_names.asp
 # List of HEX values   : https://www.w3schools.com/colors/colors_hex.asp
 # Colour converter     : https://rgb.to/
-#
+# -------------------------------------------------------------------------- #
 # Example:
 #
 # add.border.sh -o black -O 10 -i hsl(0,0%,66%) -I 0.5 -s 2048 image.png
 #
+# Output file from above example will  be named: image_.png
 # -------------------------------------------------------------------------- #
 #set -xv
 umask 026
@@ -50,6 +52,7 @@ OuterPercent="6.0"
 MaxWidth="2560"
 MaxHeight="2560"
 
+# -------------------------------------------------------------------------- #
 function _showHelp ()
 {
   clear
@@ -101,6 +104,7 @@ do
     s) MaxWidth=$OPTARG
        MaxHeight=$OPTARG;;
     h) _showHelp;;
+    *) _showHelp;;
   esac
 done
 shift $((OPTIND-1))
@@ -112,18 +116,16 @@ OutExt="${InFile##*.}"
 InnerPercent="${InnerPercent%\%}"
 OuterPercent="${OuterPercent%\%}"
 IFrame="-frame x${InnerPercent}%+0+0"
-[ ${InnerPercent} = "0" ] && IFrame=""
-
+[ "${InnerPercent}" = "0" ] && IFrame=""
 # -------------------------------------------------------- #
 # Create bordered image:
 convert                                                     \
   "$InFile"                                                 \
   -mattecolor "${InnerBorder}" ${IFrame}                    \
-  -mattecolor "${OuterBorder}" -frame x${OuterPercent}%+0+0 \
+  -mattecolor "${OuterBorder}" -frame "x${OuterPercent}%+0+0" \
   -resize "${MaxWidth}x${MaxHeight}>"                       \
   "${OutName}.${OutExt}"
 
 exit 0
-
 # -------------------------------------------------------------------------- #
 # End
