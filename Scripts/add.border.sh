@@ -83,6 +83,8 @@ function _showHelp ()
   echo ""
   echo "add.border.sh -o black -O 10 -i hsl(0,0%,66%) -I 0.5 -s 2048 image.png"
   echo ""
+  echo "The newly created image will have the following name: image_.png"
+  echo ""
   exit 0
 }
 # -------------------------------------------------------------------------- #
@@ -105,7 +107,7 @@ shift $((OPTIND-1))
 # -------------------------------------------------------- #
 # set in/out/ext for file
 InFile="$1"
-OutName="${InFile%.*}"
+OutName="${InFile%.*}_"
 OutExt="${InFile##*.}"
 InnerPercent="${InnerPercent%\%}"
 OuterPercent="${OuterPercent%\%}"
@@ -119,7 +121,7 @@ IFrame="-frame x${InnerPercent}%+0+0"
   -mattecolor "${InnerBorder}" ${IFrame}  \
   -mattecolor "${OuterBorder}" -frame x${OuterPercent}%+0+0 \
   -resize "${MaxWidth}x${MaxHeight}>"                       \
-  "${OutName}.sc.${OutExt}"
+  "${OutName}.${OutExt}"
 
 exit 0
 
