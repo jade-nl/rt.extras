@@ -86,7 +86,7 @@ function _showHelp ()
   echo ""
   echo "add.border.sh -o black -O 10 -i hsl(0,0%,66%) -I 0.5 -s 2048 image.png"
   echo ""
-  echo "The newly created image will have the following name: image_.png"
+  echo "Output file from above example will  be named: image_.png"
   echo ""
   exit 0
 }
@@ -119,11 +119,11 @@ IFrame="-frame x${InnerPercent}%+0+0"
 [ "${InnerPercent}" = "0" ] && IFrame=""
 # -------------------------------------------------------- #
 # Create bordered image:
-convert                                                     \
-  "$InFile"                                                 \
-  -mattecolor "${InnerBorder}" ${IFrame}                    \
+convert                                                       \
+  "$InFile"                                                   \
+  -mattecolor "${InnerBorder}" "${IFrame}"                    \
   -mattecolor "${OuterBorder}" -frame "x${OuterPercent}%+0+0" \
-  -resize "${MaxWidth}x${MaxHeight}>"                       \
+  -resize "${MaxWidth}x${MaxHeight}>"                         \
   "${OutName}.${OutExt}"
 
 exit 0
