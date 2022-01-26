@@ -6,5 +6,5 @@
 - border-coloured.pp3
 - border-white.pp3
 
-  Create a black or coloured border (just a novelty).
+  Create a white or coloured border (just a novelty).
 
