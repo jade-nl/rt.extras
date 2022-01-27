@@ -10,7 +10,8 @@
 #  -i colour      - Set colour for inner border       - #000000 (Black)
 #  -I percentage  - Set width for inner border        - 0.2%
 #                 - Use -I 0 (zero) to fully disable inner border
-#  -s size        - Set maximum size (longest side)   - 2560
+#  -s size        - Set maximum size (longest side)   - 0 (disabled)
+#                 - Using -s 0 (zero) keeps original image size
 # -------------------------------------------------------------------------- #
 # colour can be set as a:
 #
@@ -49,8 +50,8 @@ InnerBorder="#000000"
 OuterBorder="#fffff0"
 InnerPercent="0.2"
 OuterPercent="6.0"
-MaxWidth="2560"
-MaxHeight="2560"
+MaxWidth="0"
+MaxHeight="0"
 
 # -------------------------------------------------------------------------- #
 function _showHelp ()
@@ -68,15 +69,16 @@ function _showHelp ()
   echo " -I percentage  - Set width for inner border        - 0.2%"
   echo "                - Use -I 0 (zero) to disable inner border"
   echo ""
-  echo " -s size        - Set maximum size (longest side)   - 2560"
+  echo " -s size        - Set maximum size (longest side)   - 0"
+  echo "                - Using -s 0 (zero) keeps original image size"
   echo ""
   echo ""
   echo "colour can be set as a:"
   echo ""
-  echo "- Colour name : Ivory"
-  echo "- HEX value   : #fffff0"
-  echo "- RGB value   : rgb(255,255,240)  !! No spaces"
-  echo "- HSL value   : hsl(60,100%,97%)  !! No spaces"
+  echo "- colour known name : Ivory"
+  echo "- HEX value         : #fffff0"
+  echo "- RGB value         : rgb(255,255,240)  !! No spaces"
+  echo "- HSL value         : hsl(60,100%,97%)  !! No spaces"
   echo ""
   echo "List of colour names : https://www.w3schools.com/colors/colors_names.asp"
   echo "List of HEX values   : https://www.w3schools.com/colors/colors_hex.asp"
@@ -116,14 +118,16 @@ OutExt="${InFile##*.}"
 InnerPercent="${InnerPercent%\%}"
 OuterPercent="${OuterPercent%\%}"
 IFrame="-frame x${InnerPercent}%+0+0"
+RSize="-resize ${MaxWidth}x${MaxHeight}>"
 [ "${InnerPercent}" = "0" ] && IFrame=""
+[ "${MaxWidth}" = "0" ] && RSize=""
 # -------------------------------------------------------- #
 # Create bordered image:
 convert                                                       \
   "$InFile"                                                   \
-  -mattecolor "${InnerBorder}" "${IFrame}"                    \
+  -mattecolor "${InnerBorder}" ${IFrame}                      \
   -mattecolor "${OuterBorder}" -frame "x${OuterPercent}%+0+0" \
-  -resize "${MaxWidth}x${MaxHeight}>"                         \
+  ${RSize}                                                    \
   "${OutName}.${OutExt}"
 
 exit 0
