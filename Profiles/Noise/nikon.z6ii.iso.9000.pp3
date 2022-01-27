@@ -26,14 +26,7 @@ LCurve=1;0.100;0.295;0.35;0.28;0.80;0.080;0.23;0.35;
 CCCurve=1; 0.11;0.535;0.35;0.35;0.5135;0.105;0.35;0.35;
 
 [PostDemosaicSharpening]
-Enabled=true
-Contrast=80
-AutoContrast=false
-AutoRadius=false
-DeconvRadius=0.5
-DeconvRadiusOffset=0
-DeconvIterCheck=true
-DeconvIterations=20
+Enabled=false
 
 [RAW Bayer]
 Method=lmmse

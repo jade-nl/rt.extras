@@ -26,10 +26,10 @@ LCurve=1;0.1025;0.300;0.35;0.28;0.82;0.0825;0.23;0.35;
 CCCurve=1;0.1125;0.54;0.35;0.35;0.5145;0.1055;0.35;0.35;
 
 [PostDemosaicSharpening]
-Enabled=true
-Contrast=95
-AutoContrast=false
-AutoRadius=false
+Enabled=false
+Contrast=15
+AutoContrast=true
+AutoRadius=true
 DeconvRadius=0.5
 DeconvRadiusOffset=0
 DeconvIterCheck=true
