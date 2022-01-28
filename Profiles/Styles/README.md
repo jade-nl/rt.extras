@@ -14,7 +14,7 @@ The above styles are starting points and need to be tuned/adjusted after applyin
 
 Minimal way to apply one of the above Styles would be:
 - Load RAW,
-- Apply base.profile.pp3 (assuming this isn't don't automatically),
+- Apply base.profile.pp3 (assuming this isn't done automatically),
 - Set exposure,
 - Set Whit Balance,
 - Apply style,

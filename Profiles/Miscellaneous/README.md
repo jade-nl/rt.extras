@@ -4,7 +4,7 @@
 
   Sets Colour Toning's *L\*a\*b blending* method with predefined and in sync guides for both the *Colour* and *Opacity* equalizer.
 
-- hsv.more.verticals.pp3
+- hsv.precision.pp3
 
   More precision: 12 instead of the standard 6 vertical colour guides.
 
