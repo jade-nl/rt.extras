@@ -1,5 +1,5 @@
 ## Profiles
 
-Most of these profiles are starting points and need adjusting/tuning. Theyshould not be used *as-is*.
+All these profiles are starting points and need adjusting/tuning as such they should not be used *as-is*.
 
 

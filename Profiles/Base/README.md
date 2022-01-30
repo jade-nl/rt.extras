@@ -2,7 +2,7 @@
 
 **base.profile.pp3**
 
-A general use profile. This will work as a static or as a base for a [dynamic profile](https://rawpedia.rawtherapee.com/Dynamic_processing_profiles).
+A general use starting profile. Can be used as a static or as a base for a [dynamic profile](https://rawpedia.rawtherapee.com/Dynamic_processing_profiles).
 
 This profile consists of the following settings on top of a neutral profile:
 
@@ -16,7 +16,7 @@ This profile consists of the following settings on top of a neutral profile:
 - Noise Reduction -> *On* (Chrominance part only, Luminance part is off)
 - Defringe -> *On*
 
-Some other preferences are dialled in as a starting point. These modules are not activated/on by default:
+Some other preferences are dialled in as a starting point, these are not activated/on by default:
 
 - Wavelet Levels
   - Edge Sharpness

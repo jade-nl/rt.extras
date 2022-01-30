@@ -25,4 +25,4 @@ The following can be, independently, set:
 - Outer border width,
 - Maximum size (longest side and scaled down only).
 
-The Linux script is written with *convert*, a ImageMagick tool, at its base.
+This Linux script is written with *convert*, a ImageMagick tool, at its base.
