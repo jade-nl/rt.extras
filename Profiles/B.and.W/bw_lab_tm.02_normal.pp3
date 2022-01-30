@@ -21,11 +21,11 @@ GammaRed=10
 GammaGreen=0
 GammaBlue=0
 Algorithm=SP
-LuminanceCurve=1;0;0.75;0.35;0.35;0.16667;0.5;0.35;0.35;0.33333;0.5;0.35;0.35;0.5;0.5;0.35;0.35;0.66667;0.25;0.35;0.35;0.8333;0.5;0.35;0.35;
+LuminanceCurve=1;0;0.625;0.35;0.35;0.16667;0.5625;0.35;0.35;0.33333;0.5;0.35;0.35;0.5;0.4375;0.35;0.35;0.66667;0.375;0.35;0.35;0.8333;0.5;0.35;0.35;
 BeforeCurveMode=FilmLike
 AfterCurveMode=Standard
-BeforeCurve=3;0;0;0.20;0.15;0.80;1;1;1;
-AfterCurve=2;0.25;0.5;0.75;10;5;0;-5;
+BeforeCurve=3;0;0;0.20;0.10;0.375;0.40;0.825;1;1;1;
+AfterCurve=2;0.25;0.5;0.75;10;5;-5;-10;
 
 [Luminance Curve]
 Enabled=true
@@ -37,7 +37,7 @@ RedAndSkinTonesProtection=0
 LCredsk=false
 LCurve=4;0;0;0.20;0.10;0.5;0.30;0.9;0.80;1;1;
 aCurve=0;
-bCurve=0;
+bCurve=3;0;0.025;0.30;0.2875;0.9;0.95;1;1;
 ccCurve=0;
 chCurve=0;
 lhCurve=0;
@@ -47,8 +47,8 @@ ClCurve=0;
 
 [EPD]
 Enabled=true
-Strength=0.50
-Gamma=0.95
+Strength=0.37
+Gamma=1.0
 EdgeStopping=1.45
 Scale=1.25
 ReweightingIterates=0
