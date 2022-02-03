@@ -1,5 +1,5 @@
 [Version]
-AppVersion=5.8-3442-g7cc1d92b8
+AppVersion=5.8-3148-g466101dde
 Version=349
 
 [Black & White]
@@ -7,15 +7,15 @@ Enabled=true
 Method=ChannelMixer
 Auto=false
 ComplementaryColors=true
-Setting=RGB-Rel
+Setting=ROYGCBPM-Abs
 Filter=None
-MixerRed=0
-MixerOrange=33
-MixerYellow=33
+MixerRed=100
+MixerOrange=22
+MixerYellow=11
 MixerGreen=50
-MixerCyan=33
+MixerCyan=22
 MixerBlue=50
-MixerMagenta=33
+MixerMagenta=44
 MixerPurple=33
 GammaRed=0
 GammaGreen=0
@@ -24,5 +24,5 @@ Algorithm=SP
 LuminanceCurve=0;
 BeforeCurveMode=Standard
 AfterCurveMode=Standard
-BeforeCurve=0;
-AfterCurve=3;0;0;1;1;
+BeforeCurve=3;0;0;0.10000000149011612;0.20000000298023224;0.40000000596046448;0.5;0.89999997615814209;0.60000002384185791;1;1;
+AfterCurve=0;
