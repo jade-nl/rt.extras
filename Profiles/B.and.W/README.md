@@ -1,6 +1,6 @@
 ## B&W profiles
 
-Some B&W starting points. These go on top of a base edit.
+Some B&W starting points. These go on top of a technically correct base edit.
 
 These 2 are a dramatic and a softer looking starting point. The wl versions add a little extra contrast if needed.
 
