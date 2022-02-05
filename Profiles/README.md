@@ -1,5 +1,4 @@
 ## Profiles
 
-All these profiles are starting points and need adjusting/tuning as such they should not be used *as-is*.
-
+A collection of profiles ranging from helpers, preset starting points for a specific module/tool to more elaborate styles.
 
