@@ -30,7 +30,7 @@ optAltLang="0"
 
 # -------------------------------------------------------------------------- #
 # !! change these to the appropriate locations !!
-gitBsDir="/home/jade/.local/git"    # location of git base directory
+gitBsDir="$HOME/.local/git"    # location of git base directory
 localTrgtDir="$HOME/.local/rt.dvlp" # install location for local RawTherapee
 # -------------------------------------------------------------------------- #
 
@@ -137,7 +137,7 @@ function _gitRtBuild ()
       -DPROC_TARGET_NUMBER="2" \
       -DOPTION_OMP="ON" \
       -DBUILD_SHARED="OFF" \
-      -DWITH_LTO="FF" \
+      -DWITH_LTO="OFF" \
       -DWITH_BENCHMARK="OFF" \
       -DWITH_PROF="OFF" \
       -DWITH_SAN="OFF" \
