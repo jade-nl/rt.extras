@@ -10,11 +10,10 @@ This profile consists of the following settings on top of a neutral profile:
 - Chromatic Aberration Correction -> *On*
   - Avoid Colour Shift -> *Off*
 - Capture Sharpening -> *On*
-- Resize -> Long Edge *2560*
 - Profiled Lens Correction -> Automatically Selected
-- Sharpening -> *On* (Default settings)
 - Noise Reduction -> *On* (Chrominance part only, Luminance part is off)
 - Defringe -> *On*
+- Output Profile -> *ProPhotoRGB*
 
 Some other preferences are dialled in as a starting point, these are not activated/on by default:
 
@@ -34,6 +33,10 @@ Some other preferences are dialled in as a starting point, these are not activat
 - HSV Equalizer -> Type *equalizer* already selected for H, S and V
 - Soft Light -> *20*
 - RGB Curves -> Type *standard* already selected for R, G and B
+- Sharpening
+  - Contrast threshold -> *25*
+  - Radius -> *0.53*
+  - Amount -> *207*
 - Local Contrast
   - Radius -> *70*
   - Amount -> *17*
@@ -43,23 +46,16 @@ Some other preferences are dialled in as a starting point, these are not activat
   - Depth -> *20*
   - Saturation -> *30*
 - Tone Mapping
-  - Strength -> *0.20*
+  - Strength -> *0.35*
   - Gamma -> *1.10*
-  - Edge Stopping -> *1.25*
+  - Edge Stopping -> *1.30*
+  - Scale -> *0.50*
 - Dynamic Range
   - Amount -> *5*
   - Detail -> *25*
   - Anchor -> *35*
 - L\*a\*b Adjustments
   - Type *Control cage* selected for Luminance curve
-  - Type *equalizer* already selected for LH, CH and HH
-
-**krita.gimp.pp3**
-
-This profile is the same as the *base.profile* profile except for:
-
- - No resizing is done, image is kept at full, original size.
- - Output Colour profile is set to *ProPhotoRGB*
 
 If you do not have access to the *ProPhotoRGB* profile, which is not provided by RawTherapee, consider using one of Elle Stone's well-behaved ICC profiles. *Rec2020* or *LargeRGB* (version 2 or 4 with g18) might be a good alternative.
 
