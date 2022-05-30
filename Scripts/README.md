@@ -29,6 +29,6 @@ This Linux script is written with *convert*, a ImageMagick tool, at its base.
 
 ### ccps.sh
 
-A ColorChecker Passport (v2) specific script to create DCP and ICC profiles. Roughly based on [this workflow](https://discuss.pixls.us/t/warning-auto-selected-neutral-patch-d02/25538/17). The **Creating the 16 bit linear tif** needs to be done by hand, the script takes it from there, starting with **Read patches**
+A ColorChecker Passport (v2) specific script to create DCP and ICC profiles. Roughly based on [this workflow](https://discuss.pixls.us/t/warning-auto-selected-neutral-patch-d02/25538/17). The *Creating the 16 bit linear tif* needs to be done by hand, the script takes it from there, starting with *Read patches*
 
 **Heads-up**: This is geared towards my setup and everything is hard-coded for the moment. Make sure to check and change paths where needed.
