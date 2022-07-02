@@ -51,9 +51,9 @@ Some other preferences are dialled in as a starting point, these are not activat
   - Edge Stopping -> *1.30*
   - Scale -> *0.50*
 - Dynamic Range
-  - Amount -> *5*
-  - Detail -> *25*
-  - Anchor -> *35*
+  - Amount -> *2*
+  - Detail -> *75*
+  - Anchor -> *65*
 - L\*a\*b Adjustments
   - Type *Control cage* selected for Luminance curve
 
@@ -62,3 +62,8 @@ If you do not have access to the *ProPhotoRGB* profile, which is not provided by
 - [Nine Degrees Below](https://ninedegreesbelow.com/photography/lcms-make-icc-profiles.html)
 - [elles_icc_profiles on GitHub](https://github.com/ellelstone/elles_icc_profiles)
 
+---
+
+**myBase.pp3**
+
+Andy Astbury's base profile as mentioned in many of his [RawTherapee videos](https://www.youtube.com/playlist?list=PLnIcpm2W3TX_kcxfxeZdfW6R_4FYh-KjS)
