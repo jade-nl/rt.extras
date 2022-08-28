@@ -122,13 +122,13 @@ LcCurve=0;
 ClCurve=0;
 
 [Sharpening]
-Enabled=true
-Contrast=22
+Enabled=false
+Contrast=25
 Method=usm
-Radius=0.5
-BlurRadius=0.2
-Amount=200
-Threshold=20;80;2000;1200;
+Radius=0.52
+BlurRadius=0.20
+Amount=207
+Threshold=20;80;1975;1450;
 OnlyEdges=false
 EdgedetectionRadius=1.9
 EdgeTolerance=1800
@@ -225,7 +225,7 @@ Threshold=35
 Enabled=true
 Radius=2
 Threshold=13
-HueCurve=1;0.16666666699999999;0;0.35;0.35;0.34699999999999998;0;0.35;0.35;0.51366742600000004;0;0.35;0.35;0.66894457100000004;0;0.35;0.35;0.82877752459999998;0.97835991;0.35;0.35;0.99088838270000001;0;0.35;0.35;
+HueCurve=1;0.166666666;0;0.35;0.35;0.346;0;0.35;0.35;0.513667426;0;0.35;0.35;0.668944571;0;0.35;0.35;0.8287775246;0.97835991;0.35;0.35;0.9908883827;0;0.35;0.35;
 
 [Dehaze]
 Enabled=false
@@ -250,25 +250,25 @@ MedMethod=soft
 RGBMethod=soft
 MethodMed=Lonly
 Redchro=14.9
-Bluechro=-3.1000000000000001
+Bluechro=-3.1
 Gamma=1.7
 Passes=1
-LCurve=1;0.05;0.15;0.35;0.35;0.55000000000000004;0.040000000000000001;0.35;0.35;
+LCurve=1;0.05;0.15;0.35;0.35;0.55;0.04;0.35;0.35;
 CCCurve=1;0.05;0.5;0.35;0.35;0.35;0.05;0.35;0.35;
 
 [EPD]
 Enabled=false
-Strength=0.2
-Gamma=1.1000000000000001
-EdgeStopping=1.25
-Scale=1
+Strength=0.35
+Gamma=1.1
+EdgeStopping=1.30
+Scale=0.5
 ReweightingIterates=0
 
 [FattalToneMapping]
 Enabled=false
-Amount=5
-Threshold=25
-Anchor=35
+Amount=2
+Threshold=75
+Anchor=65
 
 [Shadows & Highlights]
 Enabled=false
@@ -364,16 +364,7 @@ CenterX=0
 CenterY=0
 
 [Resize]
-Enabled=true
-Scale=0.83999999999999997
-AppliesTo=Cropped area
-Method=Lanczos
-DataSpecified=4
-Width=900
-Height=900
-LongEdge=2560
-ShortEdge=1694
-AllowUpscaling=false
+Enabled=false
 
 [PostDemosaicSharpening]
 Enabled=true
@@ -421,17 +412,17 @@ Grex=0.21
 Grey=0.71
 Blux=0.15
 Bluy=0.06
-LabGridcieALow=0.51763000000000003
-LabGridcieBLow=-0.33582000000000001
-LabGridcieAHigh=-0.75163000000000002
-LabGridcieBHigh=-0.81799999999999995
-LabGridcieGx=-0.69164000000000003
+LabGridcieALow=0.51763
+LabGridcieBLow=-0.33582
+LabGridcieAHigh=-0.75163
+LabGridcieBHigh=-0.818
+LabGridcieGx=-0.69164
 LabGridcieGy=-0.70909
 LabGridcieWx=-0.18964
-LabGridcieWy=-0.16636000000000001
+LabGridcieWy=-0.16636
 Preser=0
 Fbw=false
-OutputProfile=RTv4_sRGB
+OutputProfile=ProPhotoRGB
 aIntent=Relative
 OutputProfileIntent=Relative
 OutputBPC=true
@@ -447,7 +438,7 @@ Sigmadir=1
 Rangeab=20
 Protab=0
 Iter=0
-MaxLev=6
+MaxLev=7
 TilesMethod=full
 complexMethod=expert
 denMethod=12low
@@ -576,20 +567,20 @@ Sigma=1
 Offset=1
 Lowthr=40
 ResidualcontShadow=-3
-ResidualcontHighlight=3
+ResidualcontHighlight=1
 ThresholdResidShadow=33
-ThresholdResidHighLight=67
+ThresholdResidHighLight=72
 Residualradius=40
 Residualchroma=5
 Residualblur=0
 Residualblurc=0
-ResidualTM=-0.03
-ResidualEDGS=1.3
+ResidualTM=-0.07
+ResidualEDGS=1.6
 ResidualSCALE=1.1
-Residualgamma=0.97
+Residualgamma=0.89
 HueRangeResidual=0
 HueRange=-260;-250;-130;-140;
-Contrast=7
+Contrast=6
 
 [Spot removal]
 Enabled=false
@@ -649,7 +640,7 @@ Greenhigh=0
 Bluehigh=0
 Autosat=true
 OpacityCurve=1;0;0.3;0.35;0;0.25;0.8;0.35;0.35;0.7;0.8;0.35;0.35;1;0.3;0;0;
-ColorCurve=1;0.05;0.62;0.25;0.25;0.58499999999999996;0.11;0.25;0.25;
+ColorCurve=1;0.05;0.62;0.25;0.25;0.585;0.11;0.25;0.25;
 SatProtectionThreshold=30
 SaturatedOpacity=80
 Strength=50
@@ -667,7 +658,7 @@ LabRegionSaturation_1=0
 LabRegionSlope_1=1
 LabRegionOffset_1=0
 LabRegionPower_1=1
-LabRegionHueMask_1=1;0.16666666699999999;1;0.35;0.35;0.82877752459999998;1;0.35;0.35;
+LabRegionHueMask_1=1;0.166666666;1;0.35;0.35;0.8287775246;1;0.35;0.35;
 LabRegionChromaticityMask_1=1;0;1;0.35;0.35;1;1;0.35;0.35;
 LabRegionLightnessMask_1=1;0;1;0.35;0.35;1;1;0.35;0.35;
 LabRegionMaskBlur_1=0
