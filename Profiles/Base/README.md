@@ -51,7 +51,7 @@ Some other preferences are dialled in as a starting point, these are not activat
   - Edge Stopping -> *1.30*
   - Scale -> *0.50*
 - Dynamic Range
-  - Amount -> *2*
+  - Amount -> *5*
   - Detail -> *75*
   - Anchor -> *65*
 - L\*a\*b Adjustments
