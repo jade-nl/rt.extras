@@ -2,11 +2,6 @@
 AppVersion=5.8-3456-g60d89e778
 Version=349
 
-[General]
-Rank=-1
-ColorLabel=0
-InTrash=false
-
 [Exposure]
 Auto=false
 Clip=0.02
@@ -33,37 +28,6 @@ Hlbl=0
 
 [Retinex]
 Enabled=false
-Str=20
-Scal=3
-Iter=1
-Grad=1
-Grads=1
-Gam=1.3
-Slope=3
-Median=false
-Neigh=80
-Offs=0
-Vart=200
-Limd=8
-highl=4
-skal=3
-complexMethod=normal
-RetinexMethod=high
-mapMethod=none
-viewMethod=none
-Retinexcolorspace=Lab
-Gammaretinex=none
-CDCurve=0;
-MAPCurve=0;
-CDHCurve=0;
-LHCurve=0;
-Highlights=0
-HighlightTonalWidth=80
-Shadows=0
-ShadowTonalWidth=80
-Radius=40
-TransmissionCurve=1;0;0.5;0.35;0.35;0.6;0.75;0.35;0.35;1;0.5;0.35;0.35;
-GainTransmissionCurve=1;0;0.1;0.35;0;0.25;0.25;0.35;0.35;0.7;0.25;0.35;0.35;1;0.1;0;0;
 
 [Local Contrast]
 Enabled=false
@@ -74,52 +38,14 @@ Lightness=1
 
 [Channel Mixer]
 Enabled=false
-Red=1000;0;0;
-Green=0;1000;0;
-Blue=0;0;1000;
 
 [Black & White]
 Enabled=false
 Method=Desaturation
 Auto=false
-ComplementaryColors=true
-Setting=RGB-Rel
-Filter=None
-MixerRed=33
-MixerOrange=33
-MixerYellow=33
-MixerGreen=33
-MixerCyan=33
-MixerBlue=33
-MixerMagenta=33
-MixerPurple=33
-GammaRed=0
-GammaGreen=0
-GammaBlue=0
-Algorithm=SP
-LuminanceCurve=0;
-BeforeCurveMode=Standard
-AfterCurveMode=Standard
-BeforeCurve=0;
-AfterCurve=0;
 
 [Luminance Curve]
 Enabled=false
-Brightness=0
-Contrast=0
-Chromaticity=0
-AvoidColorShift=false
-RedAndSkinTonesProtection=0
-LCredsk=false
-LCurve=3;0;0;1;1;
-aCurve=0;
-bCurve=0;
-ccCurve=0;
-chCurve=0;
-lhCurve=0;
-hhCurve=0;
-LcCurve=0;
-ClCurve=0;
 
 [Sharpening]
 Enabled=false
@@ -165,57 +91,9 @@ Uniformity=5
 [White Balance]
 Enabled=true
 Setting=Camera
-Temperature=5100
-Green=1.038
-Equal=1
-TemperatureBias=0
 
 [Color appearance]
 Enabled=false
-Degree=90
-AutoDegree=true
-Degreeout=90
-AutoDegreeout=true
-Surround=Average
-complex=expert
-ModelCat=16
-CatCat=symg
-Surrsrc=Average
-AdaptLum=400
-Badpixsl=0
-Model=free
-Illum=ifree
-Algorithm=ALL
-J-Light=0
-Q-Bright=0
-C-Chroma=0
-S-Chroma=0
-M-Chroma=0
-J-Contrast=0
-Q-Contrast=0
-H-Hue=0
-RSTProtection=0
-AdaptScene=400
-AutoAdapscen=true
-YbScene=18
-Autoybscen=true
-SurrSource=false
-Gamut=true
-Tempout=5003
-Autotempout=true
-Greenout=1
-Tempsc=5003
-Greensc=1
-Ybout=18
-Datacie=false
-Tonecie=false
-Presetcat02=false
-CurveMode=Lightness
-CurveMode2=Brightness
-CurveMode3=Chroma
-Curve=0;
-Curve2=0;
-Curve3=0;
 
 [Impulse Denoising]
 Enabled=false
@@ -266,7 +144,7 @@ ReweightingIterates=0
 
 [FattalToneMapping]
 Enabled=false
-Amount=2
+Amount=5
 Threshold=75
 Anchor=65
 
@@ -281,14 +159,6 @@ Lab=false
 
 [Crop]
 Enabled=false
-X=0
-Y=0
-W=3031
-H=2006
-FixedRatio=true
-Ratio=As Image
-Orientation=As Image
-Guide=Frame
 
 [Coarse Transformation]
 Rotate=0
@@ -307,32 +177,9 @@ Amount=0
 
 [LensProfile]
 LcMode=lfauto
-LCPFile=
-UseDistortion=true
-UseVignette=true
-UseCA=false
-LFCameraMake=
-LFCameraModel=
-LFLens=
 
 [Perspective]
 Method=simple
-Horizontal=0
-Vertical=0
-CameraCropFactor=1.5
-CameraFocalLength=50
-CameraPitch=0
-CameraRoll=0
-CameraShiftHorizontal=0
-CameraShiftVertical=0
-CameraYaw=0
-ProjectionShiftHorizontal=0
-ProjectionPitch=0
-ProjectionRotate=0
-ProjectionShiftVertical=0
-ProjectionYaw=0
-ControlLineValues=
-ControlLineTypes=
 
 [Gradient]
 Enabled=false
@@ -344,13 +191,9 @@ CenterY=0
 
 [Locallab]
 Enabled=false
-Selspot=0
 
 [PCVignette]
 Enabled=false
-Strength=0.6
-Feather=50
-Roundness=50
 
 [CACorrection]
 Red=0
@@ -378,20 +221,6 @@ DeconvIterations=20
 
 [PostResizeSharpening]
 Enabled=false
-Contrast=15
-Method=rld
-Radius=0.5
-Amount=200
-Threshold=20;80;2000;1200;
-OnlyEdges=false
-EdgedetectionRadius=1.9
-EdgeTolerance=1800
-HalocontrolEnabled=false
-HalocontrolAmount=85
-DeconvRadius=0.45
-DeconvAmount=100
-DeconvDamping=0
-DeconvIterations=100
 
 [Color Management]
 InputProfile=(cameraICC)
@@ -601,9 +430,9 @@ Hueskin=-5;25;170;120;
 
 [HSV Equalizer]
 Enabled=false
-HCurve=1;0;0.5;0.35;0.35;0.16666666666666666;0.5;0.35;0.35;0.33333333333333331;0.5;0.35;0.35;0.5;0.5;0.35;0.35;0.66666666666666663;0.5;0.35;0.35;0.83333333333333326;0.5;0.35;0.35;
-SCurve=1;0;0.5;0.35;0.35;0.16666666666666666;0.5;0.35;0.35;0.33333333333333331;0.5;0.35;0.35;0.5;0.5;0.35;0.35;0.66666666666666663;0.5;0.35;0.35;0.83333333333333326;0.5;0.35;0.35;
-VCurve=1;0;0.5;0.35;0.35;0.16666666666666666;0.5;0.35;0.35;0.33333333333333331;0.5;0.35;0.35;0.5;0.5;0.35;0.35;0.66666666666666663;0.5;0.35;0.35;0.83333333333333326;0.5;0.35;0.35;
+HCurve=1;0;0.5;0.35;0.35;0.1666;0.5;0.35;0.35;0.333;0.5;0.35;0.35;0.5;0.5;0.35;0.35;0.666;0.5;0.35;0.35;0.8333;0.5;0.35;0.35;
+SCurve=1;0;0.5;0.35;0.35;0.1666;0.5;0.35;0.35;0.333;0.5;0.35;0.35;0.5;0.5;0.35;0.35;0.666;0.5;0.35;0.35;0.8333;0.5;0.35;0.35;
+VCurve=1;0;0.5;0.35;0.35;0.1666;0.5;0.35;0.35;0.333;0.5;0.35;0.35;0.5;0.5;0.35;0.35;0.666;0.5;0.35;0.35;0.8333;0.5;0.35;0.35;
 
 [SoftLight]
 Enabled=false
@@ -611,8 +440,6 @@ Strength=20
 
 [Film Simulation]
 Enabled=false
-ClutFilename=
-Strength=100
 
 [RGB Curves]
 Enabled=false
@@ -734,12 +561,6 @@ Mode=0
 
 [Film Negative]
 Enabled=false
-RedRatio=1.36
-GreenExponent=1.5
-BlueRatio=0.86
-ColorSpace=0
-RefInput=0;0;0;
-RefOutput=2739.947021484375;2740.07568359375;2740.035400390625;
 
 [RAW Preprocess WB]
 Mode=1
