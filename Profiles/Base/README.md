@@ -120,7 +120,7 @@ This profiles (re)sets the following modules:
 - Film Negative
   - Turned ON
 
-This profile relies on, and needs to be applied on top of, *base.profile.pp3*
+This profile relies on, and needs to be applied on top of, the above mentioned *base.profile.pp3*
 
 As can be seen in the Colour Management section, this one is set for a Nikon D750. Change the *Input Profile* to the appropriate one.
 
