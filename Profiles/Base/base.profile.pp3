@@ -160,8 +160,8 @@ ReweightingIterates=0
 [FattalToneMapping]
 Enabled=false
 Amount=5
-Threshold=75
-Anchor=65
+Threshold=35
+Anchor=45
 
 [Shadows & Highlights]
 Enabled=false

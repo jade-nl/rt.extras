@@ -18,6 +18,8 @@ This profile consists of the following settings on top of a neutral profile:
 Some other preferences are dialled in as a starting point, these are not activated/on by default:
 
 - Wavelet Levels
+  - Wavelet leves -> 7
+  - Edge Performance -> D10 - medium
   - Edge Sharpness
   - Residual Image
 - CIE Colour Appearance Model 2002
@@ -35,7 +37,7 @@ Some other preferences are dialled in as a starting point, these are not activat
 - RGB Curves -> Type *standard* already selected for R, G and B
 - Sharpening
   - Contrast threshold -> *25*
-  - Radius -> *0.53*
+  - Radius -> *0.52*
   - Amount -> *207*
 - Local Contrast
   - Radius -> *70*
@@ -46,21 +48,36 @@ Some other preferences are dialled in as a starting point, these are not activat
   - Depth -> *20*
   - Saturation -> *30*
 - Tone Mapping
-  - Strength -> *0.35*
-  - Gamma -> *1.10*
-  - Edge Stopping -> *1.30*
-  - Scale -> *0.50*
+  - Strength -> *0.18*
+  - Gamma -> *1.15*
+  - Edge Stopping -> *1.20*
+  - Scale -> *0.40*
 - Dynamic Range
   - Amount -> *5*
-  - Detail -> *75*
-  - Anchor -> *65*
+  - Detail -> *35*
+  - Anchor -> *45*
 - L\*a\*b Adjustments
   - Type *Control cage* selected for Luminance curve
+  - Type *Control cage* selected for Chromaticity by Luminance curve
 
-If you do not have access to the *ProPhotoRGB* profile, which is not provided by RawTherapee, consider using one of Elle Stone's well-behaved ICC profiles. *Rec2020* or *LargeRGB* (version 2 or 4 with g18) might be a good alternative.
+If you do not have access to the *ProPhotoRGB* profile, which is not provided by RawTherapee, consider using one of Elle Stone's well-behaved ICC profiles. *Rec2020* or *LargeRGB* (version 2 or 4) might be a good alternative.
 
 - [Nine Degrees Below](https://ninedegreesbelow.com/photography/lcms-make-icc-profiles.html)
 - [elles_icc_profiles on GitHub](https://github.com/ellelstone/elles_icc_profiles)
+
+---
+
+**playraw.profile.pp3**
+
+This profile is the same as base.profile.pp3 except for the following settings:
+
+- Output Profile -> *RTv4_sRGB*
+- Wavelets 
+  - Wavelet leves -> 5
+  - Edge Performance -> D4 Standard
+  - Contrast -> 18/16/14/12/10/8
+- Resize
+  - Long Edge 2560
 
 ---
 
