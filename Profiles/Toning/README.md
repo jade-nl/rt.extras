@@ -1,0 +1,18 @@
+## Toning
+
+Colour Toning starting point profiles.
+
+These 3 don't make any changes. They set multiple instances in the Colour Toning module:
+
+* ct.base.smh.pp3
+
+Three masked instances that makes it easier to target shadows, midtones and highlights. Only the Luminance channel is used for this profile.
+
+* ct.base.rgb.pp3
+
+Three masked instances that makes it easier to target the reds, greens and blues. All three channels (hue, chromaticity and luminance) are used in this profile.
+
+* ct.base.all.pp3
+
+This profiles combines the above 2 profiles and adds one xtra instance that protects the deeper shadows and upper highlights via the luminance channel.
+
