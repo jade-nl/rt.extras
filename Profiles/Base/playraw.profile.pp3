@@ -223,23 +223,15 @@ CenterY=0
 
 [Resize]
 Enabled=true
-Scale=0.83999999999999997
-AppliesTo=Cropped area
 Method=Lanczos
 DataSpecified=4
-Width=900
-Height=900
 LongEdge=2560
-ShortEdge=1694
 AllowUpscaling=false
 
 [PostDemosaicSharpening]
 Enabled=true
-Contrast=24
 AutoContrast=true
 AutoRadius=true
-DeconvRadius=0.6
-DeconvRadiusOffset=0
 DeconvIterCheck=true
 DeconvIterations=20
 
@@ -294,6 +286,7 @@ Iter=0
 MaxLev=5
 TilesMethod=full
 complexMethod=expert
+denMethod=12low
 mixMethod=mix7
 sliMethod=sli
 quaMethod=cons
@@ -382,16 +375,17 @@ NPMethod=none
 BAMethod=none
 TMMethod=tm
 ChromaLink=0
-ContrastCurve=1;0;0.5;0.35000;0.35000;0.5;0.5;0.35000;0.35000;1;0.5;0.35000;0.35000;
-blcurve=1;0;0;0;0.35000;0.5;0;0.35000;0.35000;1;0;0.35000;0.35000;
+ContrastCurve=1;0;0.5;0.35;0.35;0.5;0.5;0.35;0.35;1;0.5;0.35;0.35;
+blcurve=1;0;0;0;0.35;0.5;0;0.35;0.35;1;0;0.35;0.35;
 Pastlev=0;2;30;20;
 Satlev=30;45;130;100;
-OpacityCurveRG=1;0;0.5;0.35000;0.35000;1;0.5;0.35000;0.35000;
-OpacityCurveBY=1;0;0.5;0.35000;0.35000;1;0.5;0.35000;0.35000;
-wavdenoise=1;0;1;0.35000;0.35000;0.5;1;0.35000;0.35000;1;1;0.35000;0.35000;
-wavdenoiseh=1;0;1;0.35000;0.35000;0.5;1;0.35000;0.35000;1;1;0.35000;0.35000;
-OpacityCurveW=1;0;0.35000;0.35000;0;0.35000;0.75;0.35000;0.35000;0.60000;0.75;0.35000;0.35000;1;0.35000;0;0;
-OpacityCurveWL=1;0;0.5;0.35000;0.35000;1;0.5;0.35000;0.35000;
+OpacityCurveRG=1;0;0.5;0.35;0.35;1;0.5;0.35;0.35;
+Levalshc=1;0;1;0.35;0.35;0.15;0.9;0.35;0.35;0.4;0.8;0.35;0.35;0.4;0.5;0.35;0.35;0.5;0.5;0.35;0.35;0.5;0.2;0.35;0.35;0.8;0.1;0.35;0.35;1;0;0.35;0.35;
+OpacityCurveBY=1;0;0.5;0.35;0.35;1;0.5;0.35;0.35;
+wavdenoise=1;0;1;0.35;0.35;0.5;1;0.35;0.35;1;1;0.35;0.35;
+wavdenoiseh=1;0;1;0.35;0.35;0.5;1;0.35;0.35;1;1;0.35;0.35;
+OpacityCurveW=1;0;0.35;0.35;0;0.35;0.75;0.35;0.35;0.6;0.75;0.35;0.35;1;0.35;0;0;
+OpacityCurveWL=1;0;0.5;0.35;0.35;1;0.5;0.35;0.35;
 HHcurve=0;
 Wavguidcurve=0;
 Wavhuecurve=0;
@@ -417,18 +411,18 @@ TMr=false
 Sigma=1
 Offset=1
 Lowthr=40
-ResidualcontShadow=-3
+ResidualcontShadow=-2
 ResidualcontHighlight=1
-ThresholdResidShadow=33
+ThresholdResidShadow=32
 ThresholdResidHighLight=72
 Residualradius=40
-Residualchroma=5
+Residualchroma=-1
 Residualblur=0
 Residualblurc=0
-ResidualTM=-0.070000000000000007
-ResidualEDGS=1.6000000000000001
-ResidualSCALE=1.1000000000000001
-Residualgamma=0.89000000000000001
+ResidualTM=-0.06
+ResidualEDGS=1.63
+ResidualSCALE=1.1
+Residualgamma=1.12
 HueRangeResidual=0
 HueRange=-260;-250;-130;-140;
 Contrast=6
@@ -462,8 +456,6 @@ Strength=20
 
 [Film Simulation]
 Enabled=false
-ClutFilename=
-Strength=100
 
 [RGB Curves]
 Enabled=false
@@ -497,48 +489,9 @@ PreExposure=1
 
 [RAW Bayer]
 Method=rcdvng4
-Border=4
-ImageNum=1
-CcSteps=0
-PreBlack0=0
-PreBlack1=0
-PreBlack2=0
-PreBlack3=0
-PreTwoGreen=true
-LineDenoise=0
-LineDenoiseDirection=3
-GreenEqThreshold=0
-DCBIterations=2
-DCBEnhance=true
-LMMSEIterations=2
-DualDemosaicAutoContrast=true
-DualDemosaicContrast=24
-PixelShiftMotionCorrectionMethod=1
-PixelShiftEperIso=0
-PixelShiftSigma=1
-PixelShiftShowMotion=false
-PixelShiftShowMotionMaskOnly=false
-pixelShiftHoleFill=true
-pixelShiftAverage=false
-pixelShiftMedian=false
-pixelShiftGreen=true
-pixelShiftBlur=true
-pixelShiftSmoothFactor=0.7
-pixelShiftEqualBright=false
-pixelShiftEqualBrightChannel=false
-pixelShiftNonGreenCross=true
-pixelShiftDemosaicMethod=amaze
-PDAFLinesFilter=false
 
 [RAW X-Trans]
 Method=3-pass (best)
-DualDemosaicAutoContrast=true
-DualDemosaicContrast=20
-Border=7
-CcSteps=0
-PreBlackRed=0
-PreBlackGreen=0
-PreBlackBlue=0
 
 [MetaData]
 Mode=0
