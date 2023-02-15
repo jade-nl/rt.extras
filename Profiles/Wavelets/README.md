@@ -2,6 +2,9 @@
 
 - base.01.set.edge.res.pp3
 
-  Sets a starting point for both *Edge Sharpness* and *Residual Image*.
+Sets a sane starting point for both *Edge Sharpness* and *Residual Image* and changes the following begin points in the *Wavelet Settings* section:
 
-The *Wavelet Settings* need to be adjusted to reflect the RAW used.
+* Edge performance: *D10 - medium*
+* Starting level: *Level 1*
+
+These *Wavelet Settings* are sane(r) starting points and need to be adjusted to reflect the RAW used.
