@@ -83,7 +83,7 @@ LabRegionPower_4=1
 LabRegionHueMask_4=1;0.16667;1;0.5;0.5;0.475;0;0.35;0.35;0.8584;0;0.35;0.35;
 LabRegionChromaticityMask_4=1;0;0;0.35;0.25;0.19750;1;0.35;0.35;0.85;1;0.35;0.5;1;0.0;0;0.35;
 LabRegionLightnessMask_4=1;0.00;0;0.35;0.75;0.23750;1;0.875;0.35;0.82;1;0.35;0.875;1.00;0;0.75;0.35;
-LabRegionMaskBlur_4=7.0
+LabRegionMaskBlur_4=0.7
 LabRegionChannel_4=-1
 # -------------------------------------------------------------------------- #
 # 5 greens
@@ -96,7 +96,7 @@ LabRegionPower_5=1
 LabRegionHueMask_5=1;0.27559998631477356;0;0.35;0.35;0.59649;1;0.5;0.5;0.89219999313354492;0;0.35;0.35;
 LabRegionChromaticityMask_5=1;0;0;0.35;0.25;0.19750;1;0.35;0.35;0.8750;1;0.35;0.5;1;0.0;0;0.35;
 LabRegionLightnessMask_5=1;0.00;0;0.35;0.75;0.23750;1;0.875;0.35;0.82;1;0.35;0.875;1.00;0;0.75;0.35;
-LabRegionMaskBlur_5=5.0
+LabRegionMaskBlur_5=1.0
 LabRegionChannel_5=-1
 # -------------------------------------------------------------------------- #
 # 6 blues
@@ -109,7 +109,7 @@ LabRegionPower_6=1
 LabRegionHueMask_6=1;0.16667;0;0.35;0.35;0.58396;0;0.35;0.35;0.93484;1;0.5;0.5;
 LabRegionChromaticityMask_6=1;0;0;0.35;0.25;0.19750;1;0.35;0.35;0.9250;1;0.35;0.5;1;0.0;0;0.35;
 LabRegionLightnessMask_6=1;0.00;0;0.35;0.75;0.23750;1;0.875;0.35;0.82;1;0.35;0.875;1.00;0;0.75;0.35;
-LabRegionMaskBlur_6=6.0
+LabRegionMaskBlur_6=0.7
 LabRegionChannel_6=-1
 # -------------------------------------------------------------------------- #
 # 7 overall, except deep shadows, higher highlights and extreme chromaticity
@@ -122,6 +122,6 @@ LabRegionPower_7=1
 LabRegionHueMask_7=1;0.166666667;1;0.35;0.35;0.828777;1;0.35;0.35;
 LabRegionChromaticityMask_7=1;0;0;0.35;0;0.1500;1;0.5500;0.35;0.8500;1;0.35;0.5500;1;0;0;0.35;
 LabRegionLightnessMask_7=1;0.025;0;0.35;0;0.1625;1;0.55;0.35;0.8375;1;0.35;0.55;0.975;0;0;0.35;
-LabRegionMaskBlur_7=5.5
+LabRegionMaskBlur_7=0.6
 LabRegionChannel_7=-1
 
