@@ -25,7 +25,7 @@ The following can be, independently, set:
 - Outer border width,
 - Maximum size (longest side and scaled down only).
 
-This Linux script is written with *convert*, a ImageMagick tool, at its base.
+This Linux script is written with *magick*, from ImageMagick 7, at its base.
 
 ### ccps.sh
 
