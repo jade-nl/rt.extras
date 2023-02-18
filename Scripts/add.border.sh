@@ -1,6 +1,6 @@
 #!/bin/bash
 # -------------------------------------------------------------------------- #
-# Create border around and downsize an image (jpg, png, tiff)
+# Create border around and optionally downsize an image (jpg, png, tiff)
 # -------------------------------------------------------------------------- #
 # Syntax  : add.border.sh [options] image
 #
