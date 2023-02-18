@@ -6,7 +6,7 @@ These 3 don't make any changes. They set multiple instances in the Colour Toning
 
 * ct.base.smh.pp3
 
-This sets up 3 instances that makes it easier to target shadows, midtones and highlights. The Luminance channel and mask blur is used for this profile.
+This sets up 3 instances that makes it easier to target shadows, mid tones and highlights. The Luminance channel and mask blur is used for this profile.
 
 * ct.base.rgb.pp3
 
