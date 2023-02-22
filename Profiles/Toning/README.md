@@ -28,13 +28,13 @@ Can only be used with colour edits.
 
 The Colour Toning module does not have the options to name the instances and uses a numbered sequences instead. Here's the order used in the above profiles:
 
-* S R A
-* 1 _ 1 : shadows
-* 2 _ 2 : lower mid tones
-* 3 _ 3 : upper mid tones
-* 4 _ 4 : highlights
-* _ 1 5 : reds
-* _ 2 6 : greens
-* _ 3 7 : blues
-* 5 4 8 : overall
+* **S R A**
+* **1 _ 1** : shadows
+* **2 _ 2** : lower mid tones
+* **3 _ 3** : upper mid tones
+* **4 _ 4** : highlights
+* **_ 1 5** : reds
+* **_ 2 6** : greens
+* **_ 3 7** : blues
+* **5 4 8** : overall
 

@@ -1,5 +1,9 @@
 ## Base profiles
 
+A selection of profiles that can be used when initially loading a RAW file.
+
+---
+
 **base.profile.pp3**
 
 A general use starting profile. Can be used as a static or as a base for a [dynamic profile](https://rawpedia.rawtherapee.com/Dynamic_processing_profiles).
