@@ -1,7 +1,8 @@
 [Version]
 AppVersion=5.9
-Version=34
-
+Version=349
+# -------------------------------------------------------------------------- #
+# RGB version
 [ColorToning]
 Enabled=true
 Method=LabRegions
@@ -20,15 +21,15 @@ Redhigh=0
 Greenhigh=0
 Bluehigh=0
 Autosat=true
-OpacityCurve=1;0;0.3000;0.3500;0;0.25;0.8000;0.3500;0.3500;0.70000;0.8000;0.3500;0.3500;1;0.3000;0;0;
-ColorCurve=1;0.05000;0.62;0.25;0.25;0.5850;0.11;0.25;0.25;
-SatProtectionThreshold=67
+OpacityCurve=1;0;0.3000;0.35000;0;0.25;0.80000;0.35000;0.35000;0.7000;0.80000;0.35000;0.35000;1;0.3000;0;0;
+ColorCurve=1;0.0500;0.62;0.25;0.25;0.5850;0.11;0.25;0.25;
+SatProtectionThreshold=15
 SaturatedOpacity=0
 Strength=50
 HighlightsColorSaturation=60;80;
 ShadowsColorSaturation=80;208;
-ClCurve=3;0;0;0.3500;0.6500;1;1;
-Cl2Curve=3;0;0;0.3500;0.6500;1;1;
+ClCurve=3;0;0;0.35000;0.6500;1;1;
+Cl2Curve=3;0;0;0.35000;0.6500;1;1;
 LabGridALow=0
 LabGridBLow=0
 LabGridAHigh=0
@@ -47,7 +48,7 @@ LabRegionLightnessMask_1=1;0;0;0.35000;0;0.06000;1;0.35000;0.35000;0.87000;1;0.3
 LabRegionMaskBlur_1=7.0
 LabRegionChannel_1=-1
 # -------------------------------------------------------------------------- #
-# 3 greens
+# 2 greens
 LabRegionA_2=0
 LabRegionB_2=0
 LabRegionSaturation_2=0
@@ -82,7 +83,7 @@ LabRegionOffset_4=0
 LabRegionPower_4=1
 LabRegionHueMask_4=1;0.16667;1;0.35000;0.35000;0.8288;1;0.35000;0.35000;
 LabRegionChromaticityMask_4=1;0;1;0.35000;0.35000;1;1;0.35000;0.35000;
-LabRegionLightnessMask_4=1;0.0375;0;0.35000;0;0.1825;1;0.55000;0.35000;0.81250;1;0.35000;0.55000;0.96125;0;0;0.35000;
+LabRegionLightnessMask_4=1;0.03825;0.00000;0.35000;0.00000;0.17125;1.00000;0.47500;0.35000;0.71250;1.00000;0.35000;0.47500;0.88125;0.00000;0.41250;0.35000;
 LabRegionMaskBlur_4=5.5
 LabRegionChannel_4=-1
 LabRegionsShowMask=-1
