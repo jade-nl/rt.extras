@@ -1,4 +1,4 @@
-## L*a*b* Adjustments profiles
+## L\*a\*b\* Adjustments profiles
 
 a channel: Remove a slight amount of red from the lower highlights and upper shadows
 

@@ -4,8 +4,10 @@
 
   Remove all spots present. I only use this one in combination with the [*rtsm.sh* script](https://github.com/jade-nl/rt.extras/tree/ontw/Scripts) due to a peculiar loading issue when loading a partial profile in the Local Adjustments module (see script for more details about this).
 
+---
+
 - border-coloured.pp3
 - border-white.pp3
 
-  Create a white or coloured border. Just a fun  novelty.
+  Create a white or coloured border. Just a fun  novelty. These borders are not added to the image but created from the border inwards....
 

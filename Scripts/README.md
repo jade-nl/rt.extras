@@ -1,5 +1,9 @@
 # rt.extras -> Scripts
 
+Scripts that are RawTherapee related. These provide functionality that RawTherapee does not provide, temporary fix to an outstanding PR.
+
+---
+
 ### rt.bldr.sh
 
 Simple but flexible script to locally build RawTherapee's latest development version.
@@ -31,4 +35,6 @@ This Linux script is written with *magick*, from ImageMagick 7, at its base.
 
 A ColorChecker Passport (v2) specific script to create DCP and ICC profiles. Roughly based on [this workflow](https://discuss.pixls.us/t/warning-auto-selected-neutral-patch-d02/25538/17). The *Creating the 16 bit linear tif* needs to be done by hand, the script takes it from there, starting with *Read patches*
 
-**Heads-up**: This is geared towards my setup and everything is hard-coded for the moment. Make sure to check and change paths where needed.
+This script needs *dcamprof* and the *Argyll* suite to be installed.
+
+**Heads-up**: This is geared towards my setup and some stuff is/needs to be hard-coded for the moment. Make sure to check and change paths where needed (*ccps.sh* and *rt.bldr.sh*).

@@ -13,4 +13,4 @@
 - spot.detect.03.rtc
 - spot.detect.04.rtc
 
-  These four make looking for/finding dust bunnies and/or sensor spots easier.
+  These four make looking for/finding dust bunnies and/or sensor spots easier. Use in combination with RawTherapee's spot removal tool.
