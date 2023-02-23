@@ -22,10 +22,9 @@ This profile consists of the following settings on top of a neutral profile:
 Some other preferences are dialled in as a starting point, these are not activated/on by default:
 
 - Wavelet Levels
-  - Wavelet leves -> 7
+  - Wavelet levels -> 7
   - Edge Performance -> D10 - medium
-  - Edge Sharpness
-    - 4/1.00/9/15
+  - Edge Sharpness -> 4/1.00/9/15
   - Residual Image
 - CIE Colour Appearance Model 2002
   - Complexity -> *Advanced*
@@ -78,14 +77,9 @@ This profile is the same as base.profile.pp3 except for the following settings:
 
 - Output Profile -> *RTv4_sRGB*
 - Wavelets 
-  - Wavelet leves
-    - 7
-  - Edge Performance
-    - D4 Standard
-  - Contrast 
-    - 24/21/18/14/11/8/6
-  - Edge Sharpness
-    - flat equalizer (on 0.5 line)
+  - Edge Performance -> D4 - standard
+  - Contrast -> 24/21/18/14/11/8/6
+  - Edge Sharpness -> flat equalizer (on 0.5 line)
 - Resize
   - Long Edge 2560
 - L\*a\*b Adjustments
