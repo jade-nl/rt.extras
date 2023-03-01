@@ -37,19 +37,6 @@
 #
 # The exported file and the newly created file are not removed by the script,
 # this needs to be done by the user.
-#
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# !!! There is an issue that does not load a partial Local Adjustment    !!!
-# !!! profile as would be expected. An extra step is needed until this   !!!
-# !!! is fixed: Remove the spots that are present before loading the new !!!
-# !!! profile:                                                           !!!
-# !!!                                                                    !!!
-# !!! 6) In RawTherapee delete all existing spots,                       !!!
-# !!! 7) Load created profile in RawTherapee.                            !!!
-# !!!                                                                    !!!
-# !!! Bug report number: #6411 (current behaviour is "as-intended" and   !!!
-# !!! might be fixed/changed once 5.9 has rolled out)                    !!!
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # -------------------------------------------------------------------------- #
 #set -xv
 set -u
