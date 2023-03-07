@@ -87,7 +87,7 @@ LabRegionLightnessMask_4=1;0.52500;0;0.35000;0.51250;1;1;0.20000;0.35000;
 LabRegionMaskBlur_4=5.0
 LabRegionChannel_4=-1
 # -------------------------------------------------------------------------- #
-# 8 overall - minus extremes
+# 5 overall - minus extremes
 LabRegionA_5=0
 LabRegionB_5=0
 LabRegionSaturation_5=0
