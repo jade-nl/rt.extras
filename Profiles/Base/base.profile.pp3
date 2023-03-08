@@ -165,12 +165,9 @@ Anchor=45
 
 [Shadows & Highlights]
 Enabled=false
-Highlights=0
-HighlightTonalWidth=70
-Shadows=0
-ShadowTonalWidth=30
-Radius=40
-Lab=false
+
+[ToneEqualizer]
+Enabled=false
 
 [Crop]
 Enabled=false
