@@ -15,7 +15,7 @@
 # 3) Select which spot to move.
 # 4) Select new location of this spot.
 #    -repeat steps 3 and 4 if wanted/needed-
-# 5) press *x* when satisfied or *q* to abandon/quit.
+# 5) press *s* when satisfied or *q* to abandon/quit.
 # 6) Load created profile in RawTherapee.
 # -------------------------------------------------------------------------- #
 # The first number (under *CL*) reflects the spot location, this is followed
@@ -25,7 +25,7 @@
 # The script will not point out wrong choices, it will keep asking for
 # input until it is satisfied.
 #
-# If *x* was chosen then the script will create a new file, with only the
+# If *s* was chosen then the script will create a new file, with only the
 # reordered Local Adjustment section present. This file can be imported
 # into RawTherapee. Do make sure that the *Preserve* mode is set.
 # 
@@ -61,11 +61,11 @@ fi
 # Variables
 # ------------------------------------------------------------------ #
 inFile="$1"
-outFile="${inFile%.*}.la.pp3"
+outFile="${inFile%.*}.rtsm.pp3"
 tmpDir=$(mktemp -d -t rtsm-XXXXXXXXXX)
 declare -A manipArray
 declare -A spotsArray
-lglInSrc='^[1-9xq][0-9]*$'
+lglInSrc='^[1-9sq][0-9]*$'
 lglInTrgt='^[1-9][0-9]*$'
 cntr=""
 finalize="f"
@@ -87,7 +87,11 @@ echo "${lngDev}"
 
 function _prtFooter ()
 {
-echo "# ${outFile} has been created."
+echo "# The following file has been created:"
+echo "# "
+echo "#   ${outFile}"
+echo "# "
+echo "# Load this file using the Processing Profiles section."
 echo "# "
 echo "${lngDev}"
 }
@@ -111,9 +115,9 @@ do
   
   # -------------------------------------------------------- #
   # get spot to move
-  while read -rp "# Select a spot [1-${spotCount}xq] : " srcSpot
+  while read -rp "# Select a spot [1-${spotCount}] [s]ave [q]quit : " srcSpot
   do
-    if [ "${srcSpot}" = "x" ]
+    if [ "${srcSpot}" = "s" ]
     then
       finalize="t"
       echo -en "\\033[1A\\033[2K"
@@ -144,7 +148,7 @@ do
   
   # -------------------------------------------------------- #
   # get location to move to
-  while read -rp "# Move to spot [0-${spotCount}] : " trgtSpot
+  while read -rp "# Move to spot [1-${spotCount}] : " trgtSpot
   do
     if ! [[ "${trgtSpot}" =~  ${lglInTrgt} ]] || \
          [[ "${trgtSpot}" -lt 0 ]]            || \
