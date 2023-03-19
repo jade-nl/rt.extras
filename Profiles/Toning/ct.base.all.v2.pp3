@@ -47,8 +47,9 @@ LabRegionChromaticityMask_1=1;0;1;0.35000;0.35000;1;1;0.35000;0.35000;
 LabRegionLightnessMask_1=1;0;1;0.35000;0.1500;0.33750;0;0.62500;0.35000;
 LabRegionMaskBlur_1=8.7
 LabRegionChannel_1=-1
+
 # -------------------------------------------------------------------------- #
-# 2 mid tones - lower part
+# 2 mid tones
 LabRegionA_2=0
 LabRegionB_2=0
 LabRegionSaturation_2=0
@@ -57,11 +58,12 @@ LabRegionOffset_2=0
 LabRegionPower_2=1
 LabRegionHueMask_2=1;0.16667;1;0.35000;0.35000;0.8288;1;0.35000;0.35000;
 LabRegionChromaticityMask_2=1;0;1;0.35000;0.35000;1;1;0.35000;0.35000;
-LabRegionLightnessMask_2=1;0.00750;0.00000;0.35000;0.26250;0.24150;0.76250;0.41250;0.35000;0.25750;0.76250;0.40000;0.67000;0.57125;0.00000;0.89125;0.35000;
+LabRegionLightnessMask_2=1; 0.00750;0.00000;0.35000;0.26250;0.24150;0.76250;0.41250;0.35000;0.59000;0.76250;0.35000;0.45000;0.89000;0.0000;0.57000;0.35000;
 LabRegionMaskBlur_2=11.3
 LabRegionChannel_2=-1
+
 # -------------------------------------------------------------------------- #
-# 3 mid tones - upper part
+# 3 highlights
 LabRegionA_3=0
 LabRegionB_3=0
 LabRegionSaturation_3=0
@@ -70,74 +72,61 @@ LabRegionOffset_3=0
 LabRegionPower_3=1
 LabRegionHueMask_3=1;0.16667;1;0.35000;0.35000;0.8288;1;0.35000;0.35000;
 LabRegionChromaticityMask_3=1;0;1;0.35000;0.35000;1;1;0.35000;0.35000;
-LabRegionLightnessMask_3=1;0.27500;0.0000;0.35000;0.59000;0.52000;0.76250;0.67500;0.70000;0.59000;0.76250;0.35000;0.45000;0.89000;0.0000;0.57000;0.35000;
-LabRegionMaskBlur_3=11.3
+LabRegionLightnessMask_3=1;0.52500;0;0.35000;0.51250;1;1;0.20000;0.35000;
+LabRegionMaskBlur_3=8.7
 LabRegionChannel_3=-1
 # -------------------------------------------------------------------------- #
-# 4 highlights
+# 4 reds
 LabRegionA_4=0
 LabRegionB_4=0
 LabRegionSaturation_4=0
 LabRegionSlope_4=1
 LabRegionOffset_4=0
 LabRegionPower_4=1
-LabRegionHueMask_4=1;0.16667;1;0.35000;0.35000;0.8288;1;0.35000;0.35000;
+LabRegionHueMask_4=1;0.21000;0.81250;0.35000;0.35000;0.29000;0.81250;0.35000;0.35000;0.59000;0;0.35000;0.35000;0.90000;0;0.35000;0.35000;
 LabRegionChromaticityMask_4=1;0;1;0.35000;0.35000;1;1;0.35000;0.35000;
-LabRegionLightnessMask_4=1;0.52500;0;0.35000;0.51250;1;1;0.20000;0.35000;
-LabRegionMaskBlur_4=8.7
+LabRegionLightnessMask_4=1;0;0;0.35000;0;0.06000;0.93750;0.35000;0.35000;0.87000;0.93750;0.35000;0.35000;0.95000;0;0;0.35000;
+LabRegionMaskBlur_4=7.0
 LabRegionChannel_4=-1
 # -------------------------------------------------------------------------- #
-# 5 reds
+# 5 greens
 LabRegionA_5=0
 LabRegionB_5=0
 LabRegionSaturation_5=0
 LabRegionSlope_5=1
 LabRegionOffset_5=0
 LabRegionPower_5=1
-LabRegionHueMask_5=1;0.21000;0.81250;0.35000;0.35000;0.29000;0.81250;0.35000;0.35000;0.59000;0;0.35000;0.35000;0.90000;0;0.35000;0.35000;
+LabRegionHueMask_5=1;0.30000;0;0.35000;0.35000;0.55000;0.81250;0.35000;0.35000;0.65000;0.81250;0.35000;0.35000;0.86000;0;0.35000;0.35000;
 LabRegionChromaticityMask_5=1;0;1;0.35000;0.35000;1;1;0.35000;0.35000;
-LabRegionLightnessMask_5=1;0;0;0.35000;0;0.06000;0.93750;0.35000;0.35000;0.87000;0.93750;0.35000;0.35000;0.95000;0;0;0.35000;
+LabRegionLightnessMask_5=1;0.00;0;0.35000;0.75000;0.1250;0.93750;0.875;0.35;0.9375;0.93750;0.35;0.875;1.00;0;0.75;0.35;
 LabRegionMaskBlur_5=7.0
 LabRegionChannel_5=-1
 # -------------------------------------------------------------------------- #
-# 6 greens
+# 6 blues
 LabRegionA_6=0
 LabRegionB_6=0
 LabRegionSaturation_6=0
 LabRegionSlope_6=1
 LabRegionOffset_6=0
 LabRegionPower_6=1
-LabRegionHueMask_6=1;0.30000;0;0.35000;0.35000;0.55000;0.81250;0.35000;0.35000;0.65000;0.81250;0.35000;0.35000;0.86000;0;0.35000;0.35000;
+LabRegionHueMask_6=1;0.25;0;0.35000;0.35000;0.55000;0;0.35000;0.35000;0.85000;0.81250;0.35000;0.35000;0.95000;0.81250;0.35000;0.35000;
 LabRegionChromaticityMask_6=1;0;1;0.35000;0.35000;1;1;0.35000;0.35000;
-LabRegionLightnessMask_6=1;0.00;0;0.35000;0.75000;0.1250;0.93750;0.875;0.35;0.9375;0.93750;0.35;0.875;1.00;0;0.75;0.35;
+LabRegionLightnessMask_6=1;0.00;0;0.35;0.75;0.13750;0.88125;0.875;0.35;0.8750;0.88125;0.35;0.875;1.00;0;0.75;0.35;
 LabRegionMaskBlur_6=7.0
 LabRegionChannel_6=-1
 # -------------------------------------------------------------------------- #
-# 7 blues
+# 7 overall - minus extremes
 LabRegionA_7=0
 LabRegionB_7=0
 LabRegionSaturation_7=0
 LabRegionSlope_7=1
 LabRegionOffset_7=0
 LabRegionPower_7=1
-LabRegionHueMask_7=1;0.25;0;0.35000;0.35000;0.55000;0;0.35000;0.35000;0.85000;0.81250;0.35000;0.35000;0.95000;0.81250;0.35000;0.35000;
+LabRegionHueMask_7=1;0.16667;1;0.35000;0.35000;0.8288;1;0.35000;0.35000;
 LabRegionChromaticityMask_7=1;0;1;0.35000;0.35000;1;1;0.35000;0.35000;
-LabRegionLightnessMask_7=1;0.00;0;0.35;0.75;0.13750;0.88125;0.875;0.35;0.8750;0.88125;0.35;0.875;1.00;0;0.75;0.35;
-LabRegionMaskBlur_7=7.0
+LabRegionLightnessMask_7=1;0.03825;0.00000;0.35000;0.00000;0.17125;0.7125;0.47500;0.45000;0.69250;0.71250;0.00000;0.38125;0.87125;0.00000;0.41250;0.35000;
+LabRegionMaskBlur_7=5.5
 LabRegionChannel_7=-1
-# -------------------------------------------------------------------------- #
-# 8 overall - minus extremes
-LabRegionA_8=0
-LabRegionB_8=0
-LabRegionSaturation_8=0
-LabRegionSlope_8=1
-LabRegionOffset_8=0
-LabRegionPower_8=1
-LabRegionHueMask_8=1;0.16667;1;0.35000;0.35000;0.8288;1;0.35000;0.35000;
-LabRegionChromaticityMask_8=1;0;1;0.35000;0.35000;1;1;0.35000;0.35000;
-LabRegionLightnessMask_8=1;0.03825;0.00000;0.35000;0.00000;0.17125;0.7125;0.47500;0.45000;0.69250;0.71250;0.00000;0.38125;0.87125;0.00000;0.41250;0.35000;
-LabRegionMaskBlur_8=5.5
-LabRegionChannel_8=-1
 LabRegionsShowMask=-1
 # -------------------------------------------------------------------------- #
 

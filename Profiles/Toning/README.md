@@ -38,3 +38,9 @@ The Colour Toning module does not have the options to name the instances and use
 * **_ 3 7** : blues
 * **5 4 8** : overall
 
+---
+
+* ct.base.all.v2.pp3
+
+A slightly simpler, 7 instance  version of *ct.base.all.pp3*. The the double mid-tone entry are merged in this one.
+

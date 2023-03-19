@@ -24,23 +24,24 @@ Some other preferences are dialled in as a starting point, these are not activat
 - Wavelet Levels
   - Wavelet levels -> 7
   - Edge Performance -> D10 - medium
-  - Edge Sharpness -> 4/1.00/9/15
-  - Residual Image
+  - Edge Sharpness -> 4/1.00/9/15 + custom LC curve.
+  - Residual Image -> -1/31/2/71/40/3/-.03/1.06/1.51/1.05/0/0/-1
 - CIE Colour Appearance Model 2002
   - Complexity -> *Advanced*
   - Cat02/16 Mode -> *Automatic Symmetric*
   - WP Model -> *Free temp + tint + CAT02/16 + output*
   - Illuminant -> *Free*
 - Vibrance
-  - Saturated Tones -> *-10*
-  - Pastel Tones -> *+10*
-  - Pastel/saturated tones threshold -> *50/0*
+  - Saturated Tones -> *13*
+  - Pastel Tones -> *6*
+  - Pastel/saturated tones threshold -> *20/40*
   - Link pastel and saturated tones -> *Unchecked*
-- HSV Equalizer -> Type *equalizer* already selected for H, S and V
+- HSV Equalizer -> Type *equalizer* already set for H, S and V
 - Soft Light -> *20*
 - RGB Curves -> Type *standard* already selected for R, G and B
 - Sharpening
   - Contrast threshold -> *25*
+  - Blur   -> *0.20*
   - Radius -> *0.52*
   - Amount -> *207*
 - Local Contrast
@@ -78,12 +79,12 @@ This profile is the same as base.profile.pp3 except for the following settings:
 - Output Profile -> *RTv4_sRGB*
 - Wavelets 
   - Edge Performance -> D4 - standard
-  - Contrast -> 24/21/18/14/11/8/6
+  - Contrast -> 24/21/18/13/11/7/4/2
   - Edge Sharpness -> flat equalizer (on 0.5 line)
 - Resize
   - Long Edge 2560
 - L\*a\*b Adjustments
-  - LH, CH and HH equalizer selected.
+  - LH, CH and HH equalizer are set.
 
 ---
 

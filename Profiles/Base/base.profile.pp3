@@ -82,9 +82,9 @@ DeconvIterations=30
 
 [Vibrance]
 Enabled=false
-Pastels=10
-Saturated=-10
-PSThreshold=0;50;
+Pastels=6
+Saturated=13
+PSThreshold=40;20;
 ProtectSkins=false
 AvoidColorShift=true
 PastSatTog=false
@@ -167,7 +167,7 @@ Anchor=45
 Enabled=false
 
 [ToneEqualizer]
-Enabled=false
+Enabled=true
 
 [Crop]
 Enabled=false
@@ -450,10 +450,10 @@ Enabled=false
 
 [RGB Curves]
 Enabled=false
-LumaMode=false
-rCurve=1;0;0;1;1;
-gCurve=1;0;0;1;1;
-bCurve=1;0;0;1;1;
+LumaMode=true
+rCurve=3;0;0;1;1;
+gCurve=3;0;0;1;1;
+bCurve=3;0;0;1;1;
 
 [ColorToning]
 Enabled=false
