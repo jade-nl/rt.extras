@@ -42,5 +42,5 @@ The Colour Toning module does not have the options to name the instances and use
 
 * ct.base.all.v2.pp3
 
-A slightly simpler, 7 instance  version of *ct.base.all.pp3*. The the double mid-tone entry are merged in this one.
+A slightly simpler, 7 instance  version of *ct.base.all.pp3*. The the double mid-tone entries are merged in this one.
 
