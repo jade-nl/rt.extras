@@ -68,7 +68,6 @@ function _gitRtClone ()
 #  git pull origin BRANCH_NAME
 #  git checkout dev
 #  git merge -m "Description and number" BRANCH_NAME
-#  git merge --no-edit BRANCH_NAME
   
   # -------------------------------------------------------- #
   # Merge external branche - not from github.com/Beep6581/RawTherapee
@@ -142,7 +141,8 @@ function _gitRtBuild ()
       -DWITH_PROF="OFF" \
       -DWITH_SAN="OFF" \
       -DWITH_SYSTEM_KLT="OFF" \
-      -DCMAKE_CXX_FLAGS="-Wno-maybe-uninitialized" \
+      -DCMAKE_C_FLAGS="-Wno-maybe-uninitialized -O3" \
+      -DCMAKE_CXX_FLAGS="-Wno-maybe-uninitialized -O3" \
       .. || exit 249
   
   #    -DCMAKE_BUILD_TYPE="release"  \
